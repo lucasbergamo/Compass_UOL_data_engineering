@@ -18,7 +18,7 @@
 <h3 align ="left">
   <p>
     
-Sou um recifence orgulhoso e bairrista, nascido em REC/PE. Gosto de concertar hardware,aprender sobre novas tecnologias, praticar esportes e tomar um bom café. <br> <br>
+Sou um recifence orgulhoso e bairrista, nascido em REC/PE. Gosto de consertar hardware,aprender sobre novas tecnologias, praticar esportes e tomar um bom café. <br> <br>
 Desde sempre fui fascinado por tecnologia, meu tio era dono de uma LanHouse e cresci com meus primos nesse ambiente de jogos e computador. <br> <br>
 Em janeiro de 2023 decidi me dedicar integralmente para conquistar minha primeira vaga na área de tecnologia, o caminho é difícil mas nao irei desistir. <br><br>
 Antes de surgir a oportunidade de trainee na compass.uol, na área de engenharia de dados, estava tentando uma carreira na área de front end. Após o feedback positivo e confirmação do estágio, me dediquei para entender a profissão de engenheiro da dados, analista e cientista. <br> <br>
