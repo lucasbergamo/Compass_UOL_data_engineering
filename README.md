@@ -1,6 +1,6 @@
-<h1 align='center'> 
-  Olá, me chamo Lucas Bérgamo 👋😃
-</h1>
+
+ # Olá, me chamo Lucas Bérgamo 👋😃
+
 
 <h2 align="center">
 :man_technologist: <strong>Estagiário em Engenharia de dados na Compass.Uol</strong>
