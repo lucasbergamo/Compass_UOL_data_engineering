@@ -56,7 +56,7 @@ No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos coma
 
 Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
 
-- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](/Sprint%20-%201/1.%20Git%20-%20Github/gitGithub.md)
+- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/0_gitGithub.md)
 - [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**]()
 
 ## Sprint #2
