@@ -1,19 +1,19 @@
-<center>
-  
-# Olá, me chamo Lucas Bérgamo 👋😃 
-</center>
+<h1 align='center'> 
+  <strong>Olá, me chamo Lucas Bérgamo 👋😃</strong>
+</h1>
 
-<center>
-  
-### :man_technologist: **Estagiário em Engenharia de dados na Compass.Uol**
-</center>
+<h3 align='center'> 
+  :man_technologist: <strong>Estagiário em Engenharia de dados na Compass.Uol</strong>
+</h3>
 
-<center>
-  
-### :mortar_board: **Estou no 3º semestre da faculdade de Análise e Desenvolvimento de Sistemas na UNINABUCO**
-</center>
+<h3 align='center'> 
+  :mortar_board: <strong>Estou no 3º semestre da faculdade de Análise e Desenvolvimento de Sistemas na UNINABUCO</strong>
+</h3>
 
-<details> <summary><strong>Sprints</strong></summary>
+
+
+
+<details> <summary><h1><strong>Sprints</strong></h1></summary>
 
 - [x] [**Sprint #1**](#sprint-1)
 - [x] [**Sprint #2**](#sprint-2)
@@ -27,6 +27,8 @@
 - [ ] [**Sprint #10**]()
 
 </details>
+
+
 
 ## **Sobre mim:**
   
