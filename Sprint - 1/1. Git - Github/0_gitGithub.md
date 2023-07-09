@@ -270,9 +270,17 @@ Cada branch pode ser atualizado com o git pull
 - Utilizamos para atualizar a master do repo como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev: 
 
 ```
-git clone - git checkout master - git pull - git checkout -b “adicionar_html” - git commit -m “inicio_html” - git push
-git checkout master - git merge origin/adicionando_css - git merge origin/adicionar_html - git push
-git checkout master - git pull
+git clone
+git checkout master
+git pull
+git checkout -b “adicionar_html”
+git commit -m “inicio_html” - git push
+git checkout master
+git merge origin/adicionando_css
+git merge origin/adicionar_html
+git push
+git checkout master
+git pull
 ```
 
 ### Enviando alterações
