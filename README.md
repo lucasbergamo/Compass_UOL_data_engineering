@@ -59,6 +59,13 @@ Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor
 - [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/0_gitGithub.md)
 - [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**]()
 
+<details><summary>Certificados</summary>
+  
+- [Git e Github](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/0_gitGithub.md)
+- [Linux](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/certificados/linux.jpg)
+
+</details>
+
 ## Sprint #2
 
   Adquiri conhecimentos em git / github, principalmente configuração e comandos mais utilizados no dia a dia, sempre documentando meu aprendizado.
