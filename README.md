@@ -61,7 +61,7 @@ Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor
 
 <details><summary>Certificados</summary>
   
-- [Git e Github](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/0_gitGithub.md)
+- [Git e Github](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/certificados/gitGithub.jpg)
 - [Linux](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/certificados/linux.jpg)
 
 </details>
