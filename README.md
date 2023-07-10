@@ -3,17 +3,16 @@
 </h1>
 
 <h3 align='center'> 
+
   :man_technologist: <strong>Estagiário em Engenharia de dados na Compass.Uol</strong>
 </h3>
 
 <h3 align='center'> 
+
   :mortar_board: <strong>Estou no 3º semestre da faculdade de Análise e Desenvolvimento de Sistemas na UNINABUCO</strong>
 </h3>
 
-
-
-
-<details> <summary><h1><strong>Sprints</strong></h1></summary>
+<details> <summary><strong>Sprints</strong></summary>
 
 - [x] [**Sprint #1**](#sprint-1)
 - [x] [**Sprint #2**](#sprint-2)
