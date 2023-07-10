@@ -530,7 +530,7 @@
 
 ----------
 
-## Compactação e descompactação de arquvos e diretórios:
+## Compactação e descompactação de arquivos e diretórios:
 
 ### Compactando arquivos com tar
 
