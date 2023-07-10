@@ -563,9 +563,12 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 - Data Mesh marca uma mudança bem-vinda de paradigma arquitetônico e organizacional em como gerenciamos Big Data. O paradigma é baseado em quatro princípios: 
 
-(1) Descentralização orientada ao domínio da propriedade e arquitetura de dados; 
-(2) Dados orientados ao domínio servidos como um produto; 
-(3) Infraestrutura de dados de autoatendimento como uma plataforma para habilitar equipes de dados autônomas e orientadas para o domínio; 
+(1) Descentralização orientada ao domínio da propriedade e arquitetura de dados.
+
+(2) Dados orientados ao domínio servidos como um produto.
+
+(3) Infraestrutura de dados de autoatendimento como uma plataforma para habilitar equipes de dados autônomas e orientadas para o domínio.
+
 (4) Governança federada para permitir ecossistemas e interoperabilidade. 
 
 - Há ainda uma grande lacuna de ferramentas comerciais para acelerar a implementação de Data Mesh e hoje o que vemos é a implementação de blocos isolados que então podem ser conectados criando assim uma grande malha de dados e tornando esse tipo de arquitetura uma realidade. Teremos ainda muita evolução e novas ferramentas surgindo nos próximos anos. 
@@ -680,10 +683,13 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 ## COMO INICIAR UM PROJETO DE BIG DATA
 
-1- Definição do Business Case
-2- Planejamento do projeto
-3- Definição dos requisitos técnicos
-4- Criação de um total ‘Total Business Value Assessment’
+1- Definição do Business Case.
+
+2- Planejamento do projeto.
+
+3- Definição dos requisitos técnicos.
+
+4- Criação de um total ‘Total Business Value Assessment’.
 
 
 ### DEFINIÇÃO DE BUSINESS CASE
