@@ -2,16 +2,15 @@
 
 <details><summary><strong>Navegação</strong></summary>
 
-1. [BIG DATA]()
-2. [O V DE VOLUME EM BIG DATA]()
-3. [Armazenamento e Processamento Paralelo]()
-4. []()
-5. []()
-6. []()
-7. []()
-8. []()
-9. []()
-10. []()
+1. [O que é Big Data](#big-data)
+2. [Sistemas de armazenamento de dados](#sistemas-de-armazenamento-de-dados)
+3. [Armazenamento e Processamento Paralelo](#armazenamento-e-processamento-paralelo)
+4. [Cloud Computing](#cloud-computing)
+5. [MLOps e DataOps](#mlops-e-dataops)
+6. [Dados como serviço](#dados-como-serviço)
+7. [ETL - extração, transformação e carga de dados](#etl---extração-transformação-e-carga-de-dados)
+8. [O que é Big Data Analytics](#o-que-é-big-data-analytics)
+9. [Como Iniciar um projeto em Big Data](#como-iniciar-um-projeto-de-big-data)
 
 </details>
 
@@ -38,6 +37,8 @@
 - Análise de grades quantidades de dados para geração de resultados importantes que, em volumes menores dificilmente seriam alcançados
 
 - O big data nos dá uma visão clara do que é granular, não temos de nos fixar na causalidade, Podemos descobrir padrões e correlações nos dados que nos propiciem novas e valiosas ideias
+
+## Sistemas de armazenamento de dados:
 
 ### Os 4Vs do Big Data: 
 
@@ -618,9 +619,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 ----------
 
-## Como Iniciar um Projeto de Big Data:
-
-### O QUE É BIG DATA ANALYTICS 
+## O QUE É BIG DATA ANALYTICS 
 
 - O valor do Big data é extraído quando se aplica uma técnica de análise de dados
 
@@ -679,7 +678,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 ![EmpresasQueUsamHadoop](img/8_Hadoop.png)
 
 
-### COMO INICIAR UM PROJETO DE BIG DATA
+## COMO INICIAR UM PROJETO DE BIG DATA
 
 1- Definição do Business Case
 2- Planejamento do projeto
