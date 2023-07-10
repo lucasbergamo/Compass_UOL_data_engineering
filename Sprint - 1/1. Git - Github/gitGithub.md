@@ -1,5 +1,7 @@
 # Sumário
 
+![Retornar]()
+
 <details><summary><strong>Navegação</strong></summary>
 
 1. [Instalação e Introdução Git](#instalação)
