@@ -456,6 +456,8 @@
 - Encontra o servidor pela combinação de DNS e IP
 - Retorna ao usuário o site desejado
 
+![DNS](img/10_dns.png)
+
 ### O que são portas?
 
 - É um endpoint
@@ -468,6 +470,8 @@
 - 22 : SSH
 - 80 : HTTP
 - 443 : HTTPS
+
+![Portas](img/10_portas.png)
 
 ### O que é TCP?
 
