@@ -71,7 +71,7 @@ Adquiri conhecimentos em SQL, de comandos básicos até tratamento de dados e ma
 
 Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de armazenamento e processamento de dados, MLOPs e DataOps. Além de entender conceitos de ETL e ELT, DaaS e como iniciar projetos em big data.
 
-- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/Sprint-2/SqlParaAnaliseDeDadosDoBasicoAoAvancado)
+- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-2/SqlParaAnaliseDeDadosDoBasicoAoAvancado/SQL.md)
 - [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-2/BigDataFundamentos/BigDataFundamentos.md)
 
 <details><summary>Certificados</summary>
