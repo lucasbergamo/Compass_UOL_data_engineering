@@ -1,13 +1,13 @@
 # Sumário
 
-![Retornar]()
+![Retornar](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/README.md)
 
 <details><summary><strong>Navegação</strong></summary>
 
 1. [Configurações](#configurações)
 2. [Comandos Básicos](#comandos-básicos)
 3. [Operadores](#operadores)
-4. [Funçoes agregadas + GROUP BY + HAVING](#funçoes-agregadas--group-by--having)
+4. [Funções agregadas + GROUP BY + HAVING](#funções-agregadas--group-by--having)
 5. [Join](#join)
 6. [Union](#union)
 7. [Subqueries](#subqueries)
@@ -501,7 +501,7 @@ where population is null
 
 ---------
 
-## Funçoes agregadas + GROUP BY + HAVING
+## Funções agregadas + GROUP BY + HAVING
 
 ### Funções Agregadas
 
