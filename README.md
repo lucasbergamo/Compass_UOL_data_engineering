@@ -55,8 +55,8 @@ No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos coma
 
 Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
 
-- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/gitGithub.md)
-- [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%201/2.%20Linux%20para%20desenvolvedores/Linux.md)
+- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/GitGithub/gitGithub.md)
+- [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/LinuxParaDesenvolvedores/Linux.md)
 
 <details><summary>Certificados</summary>
   
@@ -71,8 +71,8 @@ Adquiri conhecimentos em SQL, de comandos básicos até tratamento de dados e ma
 
 Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de armazenamento e processamento de dados, MLOPs e DataOps. Além de entender conceitos de ETL e ELT, DaaS e como iniciar projetos em big data.
 
-- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%202/SQL%20para%20An%C3%A1lise%20de%20Dados_%20Do%20b%C3%A1sico%20ao%20avan%C3%A7ado/SQL.md)
-- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%202/Big%20Data%20Fundamentos%203/BigDataFundamentos3.md)
+- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/Sprint-2/SqlParaAnaliseDeDadosDoBasicoAoAvancado)
+- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-2/BigDataFundamentos/BigDataFundamentos.md)
 
 <details><summary>Certificados</summary>
   
