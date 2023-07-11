@@ -16,7 +16,7 @@
 
 - [x] [**Sprint #1**](#sprint-1)
 - [x] [**Sprint #2**](#sprint-2)
-- [ ] [**Sprint #3**]()
+- [ ] [**Sprint #3**](#sprint-3)
 - [ ] [**Sprint #4**]()
 - [ ] [**Sprint #5**]()
 - [ ] [**Sprint #6**]()
@@ -41,7 +41,7 @@ Antes de surgir a oportunidade de trainee na compass.uol, na área de engenharia
 
 ## **Aprendizados:**
 
-Tenho buscado referências na carreira de engenheiro de dados(Jerry Strazzeri), livros (Modelagem de dados - josé Osvaldo de Sordi) e gostaria de comprar (Spark: The Definitive Guide: Big Data Processing Made Simple) e certificações (Practitioner) 
+Tenho buscado referências na carreira de engenheiro de dados(Jerry Strazzeri), livros (Modelagem de dados - josé Osvaldo de Sordi) e gostaria de comprar (Spark: The Definitive Guide: Big Data Processing Made Simple) e certificações (AWS Practitioner) 
 
 Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o mais marcante foi o de AWS na Dio que mostrou esse ecossistema maravilhoso, além de proporcionar um voucher para a realização da Certificação AWS Cloud Practitioner.
 
@@ -55,24 +55,31 @@ No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos coma
 
 Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
 
-- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/0_gitGithub.md)
-- [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**]()
+- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%201/1.%20Git%20-%20Github/gitGithub.md)
+- [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%201/2.%20Linux%20para%20desenvolvedores/Linux.md)
 
 <details><summary>Certificados</summary>
   
-- [Git e Github](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/certificados/gitGithub.jpg)
-- [Linux](https://github.com/lucasbergamo/Compass.UOL_data_engineering/blob/main/certificados/linux.jpg)
+- [Git e Github](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/gitGithub.jpg)
+- [Linux](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/linux.jpg)
 
 </details>
 
 ## Sprint #2
 
-  Adquiri conhecimentos em git / github, principalmente configuração e comandos mais utilizados no dia a dia, sempre documentando meu aprendizado.
-  No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos comandos mais utilizados que aprendi no curso.
-  Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
+Adquiri conhecimentos em SQL, de comandos básicos até tratamento de dados e manipulação de tabelas, utilizando SGBD. Realizei os exercícios bem desafiadores e sei da extrema importância de sempre me manter atualizado e estudando SQL.
 
-- [**SQL para Análise de Dados: Do básico ao avançado**]()
-- [**Big Data Fundamentos 3.0**]()
+Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de armazenamento e processamento de dados, MLOPs e DataOps. Além de entender conceitos de ETL e ELT, DaaS e como iniciar projetos em big data.
+
+- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%202/SQL%20para%20An%C3%A1lise%20de%20Dados_%20Do%20b%C3%A1sico%20ao%20avan%C3%A7ado/SQL.md)
+- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint%20-%202/Big%20Data%20Fundamentos%203/BigDataFundamentos3.md)
+
+<details><summary>Certificados</summary>
+  
+- [SQL para Análise de Dados: Do básico ao avançado](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificadoSql.jpg)
+- [Big Data Fundamentos 3.0](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificateBigDataFundamentos.jpg)
+
+</details>
 
 ## Sprint #3
 
@@ -80,6 +87,11 @@ Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor
 - [**Python 3 - Curso Completo do Básico ao Avançado**]()
 
 
+<details><summary>Certificados</summary>
+  
+- []()
+
+</details>
 
 <h2 align='center'> 
   Versionamento e Comunicação
