@@ -47,6 +47,22 @@ Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o ma
 
 Recentemente finalizei uma imersão com foco em DevOps e multicloud, onde aprendi sobre softwares que são extremamente requisitados no mercado de trabalho como: ansible, terraform, kubernetes e docker, além da integração de servidores cloud.
 
+Descobri que ao criar o arquivo markdown seguindo ordem de Título #, ##, ###, ####
+é possível utilizar a extensão markdown-all-in-one para criar automaticamente o sumário
+- ctrl + shift + p 
+- markdown all in one: Create table of content (toc)
+
+Atalhos VsCode
+
+- Duplicar Linha = Shift + Alt + Seta
+- Mover Linha = Alt + Seta
+- Apagar Linha = Ctrl + Shift + K
+- Multi Ocorrências = Ctrl + D
+- Multi Seleção = Alt + Click
+- Zen Mode = Ctrl + K Z
+- IntelliSense = Ctrl + Espaço
+
+
 ## Sprint #1
 
 Adquiri conhecimentos em git / github, principalmente configuração e comandos mais utilizados no dia a dia, sempre documentando meu aprendizado.
