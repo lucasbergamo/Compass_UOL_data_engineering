@@ -100,7 +100,7 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 ## Sprint #3
 
 
-- [**Python 3 - Curso Completo do Básico ao Avançado**]()
+- [**Python 3 - Curso Completo do Básico ao Avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-3/python3.md)
 
 
 <details><summary>Certificados</summary>
