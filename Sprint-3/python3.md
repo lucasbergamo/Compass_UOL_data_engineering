@@ -122,10 +122,12 @@
 2. ```$python3 --version```
 3. ```sudo nano .bashrc```
 4. na primeira opção colocar: ```alias python=python3```
-   ![PythonLinux](img/1_alias_python.png)
+
+![PythonLinux](img/1_alias_python.png)
+   
    - ```$source .bashrc```, ele lê o arquivo novamente após as alterações
    - ```$python --version```
-5. pip = Gerenciador de pacotes do python
+6. pip = Gerenciador de pacotes do python
    - ```$pip --version```
    - ```$sudo apt install python-pip```
    - ```$sudo apt-get isntall python3-pip```
