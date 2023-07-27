@@ -1,5 +1,5 @@
 <h1 align='center'> 
-  <strong>Olá, me chamo Lucas Bérgamo 👋😃</strong>
+  <strong>Olá, me chamo Lucas 👋😃</strong>
 </h1>
 
 <h3 align='center'> 
