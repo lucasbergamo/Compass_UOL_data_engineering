@@ -11,6 +11,8 @@
   - [Instalação Docker Windows](#instalação-docker-windows)
   - [Extensão Docker no VScode](#extensão-docker-no-vscode)
   - [Alternativa ao terminal do Windows](#alternativa-ao-terminal-do-windows)
+    - [Windows Terminal](#windows-terminal)
+  - [Rodando um container no Docker](#rodando-um-container-no-docker)
 
 </details>
 
@@ -63,3 +65,28 @@ usar esses comandos no cmd para verificar se está funcionando:
 
 - Git bash pode apresentar problemas, nao indicado utilizar
 - temos uma alternativa chamada comander( [cmder](https://cmder.app/) )
+
+#### Windows Terminal
+
+- Baixar Windows Terminal pela microsoft store
+- Configurar o terminal para abrir automaticamente no WSL. Selecionar a sua distro no menu da primeira opção Ubuntu 22.04 LTS.
+- No menu Interaction, basta marcar a primeira opção (copy selection to clipboard)
+- adicionar o tema Dracula, clicando em Open JSON file, e copiando o schema do [Dracula](https://draculatheme.com/windows-terminal)
+
+- Para mais dicas, vizualizar o tutorial : 
+
+  [Configuração do Windows para desenvolvimento](https://dev.to/1cadumagalhaes/configuracao-do-windows-para-desenvolvimento-blk)
+
+
+### Rodando um container no Docker
+
+- Vamos testar o Docker utilizando uma **imagem real**;
+- Para rodar containers utilizamos o comando **docker run**;
+- Neste comando **podemos passar diversos parâmetros**;
+- Neste exemplo vamos passar apenas o nome da imagem que é **docker/whalesay**
+- Um comando chamado **cowsay** e uma mensagem
+
+Abrir o terminal:
+  - verificar se as instancias estao sendo executadas
+  - ```wsl.exe -l -v```
+  - docker run docker/whalesay cowsay Hello_World
