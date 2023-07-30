@@ -62,6 +62,11 @@ Atalhos VsCode
 - Zen Mode = Ctrl + K Z
 - IntelliSense = Ctrl + Espaço
 
+## **Pretenções:**
+
+- fazer uma graduação em ciências da computação;
+- Desenvolver fluência em inglês
+
 
 ## Sprint #1
 
