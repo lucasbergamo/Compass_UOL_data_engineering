@@ -39,6 +39,9 @@ Em janeiro de 2023 decidi me dedicar integralmente para conquistar minha primeir
 
 Antes de surgir a oportunidade de trainee na compass.uol, na área de engenharia de dados, estava tentando uma carreira na área de front end. Após o feedback positivo e confirmação do estágio, me dediquei para entender a profissão de engenheiro, analista e cientista de dados.
 
+## Stacks
+
+
 ## **Aprendizados:**
 
 Tenho buscado referências na carreira de engenheiro de dados(Jerry Strazzeri), livros (Modelagem de dados - josé Osvaldo de Sordi) e gostaria de comprar (Spark: The Definitive Guide: Big Data Processing Made Simple) e certificações (AWS Practitioner) 
@@ -62,9 +65,9 @@ Atalhos VsCode
 - Zen Mode = Ctrl + K Z
 - IntelliSense = Ctrl + Espaço
 
-## **Pretenções:**
+## **Objetivos:**
 
-- fazer uma graduação em ciências da computação;
+- Cursar uma graduação em ciências da computação;
 - Desenvolver fluência em inglês
 
 
