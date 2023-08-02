@@ -61,6 +61,28 @@
   - [Volumes Nomeados](#volumes-nomeados)
   - [Bind mounts](#bind-mounts)
   - [O poder extra do Bind mount](#o-poder-extra-do-bind-mount)
+  - [Criando volumes manualmente](#criando-volumes-manualmente)
+  - [Listando volumes](#listando-volumes)
+  - [Inspecionando volumes](#inspecionando-volumes)
+  - [Removendo volumes](#removendo-volumes)
+  - [Remoção de volumes em massa](#remoção-de-volumes-em-massa)
+  - [Volume somente leitura](#volume-somente-leitura)
+- [Conectando containers com networks](#conectando-containers-com-networks)
+  - [O que são networks?](#o-que-são-networks)
+  - [Tipos de conexão](#tipos-de-conexão)
+  - [Tipos de rede (Drivers)](#tipos-de-rede-drivers)
+  - [Listando Networks (redes)](#listando-networks-redes)
+  - [Criando redes](#criando-redes)
+  - [Removendo redes](#removendo-redes)
+  - [Removendo redes não utilizadas](#removendo-redes-não-utilizadas)
+  - [Instalando o Postman](#instalando-o-postman)
+  - [Conexão Externa](#conexão-externa)
+  - [Conexão com máquina host](#conexão-com-máquina-host)
+  - [Conexão entre containers](#conexão-entre-containers)
+  - [Conexão entre containers](#conexão-entre-containers-1)
+  - [Desconectando um container](#desconectando-um-container)
+  - [Inspecionando redes](#inspecionando-redes)
+- [Introdução ao YAML](#introdução-ao-yaml)
 
 </details>
 
@@ -646,6 +668,7 @@ __Exemplificando:__
 - Uma **forma prática de persistir dados** em aplicações e não depender de containers para isso;
 - **Todo dado criado por um container é salvo nele**, quando o container é removido perdemos os dados;
 - Então precisamos dos volumes para gerenciar os dados e também conseguir **fazer backups** de forma mais simples;
+- Volume auxilia a guardar dados em uma pasta ou local e compartilhar entre containers e reutilizar em aplicações;
 
 ### Tipos de volumes
 
@@ -741,7 +764,301 @@ __Exemplificando:__
 
 - vamos reutilizar o run e colocar o diretório atual (pasta messages)
 - clicar com o botão direito na pasta message e **copiar o caminho**
-  ```docker run -d -p 81:80 --name phpmessages_container -v C:\Users\Lucas\Documents\Compass_UOL_data_engineering\Sprint-4\docker_e_kubernetes\2_volumes\messages:/var/www/html/messages --rm phpmessages```
+  ```docker run -d -p 80:80 --name phpmessages_container -v C:\Users\Lucas\Documents\Compass_UOL_data_engineering\Sprint-4\docker_e_kubernetes\2_volumes\messages:/var/www/html/messages --rm phpmessages```
 
+- ao rodar no wsl gera um erro, devemos utilizar o terminal padrão do windows
 
 ### O poder extra do Bind mount
+
+- **Bind mount** não serve apenas para volumes!
+- Podemos utilizar esta técnica para **atualização em tempo real do projeto**;
+- Sem ter que refazer o build a cada atualização do mesmo;
+
+__Exemplificando:__
+
+- vamos copiar o diretório pai do projeto, no caso a pasta 2_Volumes
+- e mudamos o diretorio para o workdir ao inves do /messages 
+  ```docker run -d -p 80:80 --name phpmessages_container -v C:\Users\Lucas\Documents\Compass_UOL_data_engineering\Sprint-4\docker_e_kubernetes\2_volumes\:/var/www/html/ --rm phpmessages```
+- ao inserir uma mensagem, ele continua salvando na pasta messages
+- agora se eu alterar o html, ele muda em tempo real na aplicação, sem precisar buildar a imagem novamente
+
+### Criando volumes manualmente
+
+- Podemos criar volumes manualmente também;
+- Utilizamos o comando: ```docker volume create <nome>```
+- Desta maneira temos um **named volume** criado, podemos atrelar a algum container na execução do mesmo
+
+__Exemplificando:__
+
+- ```docker volume ls```
+- ```docker volume create volumeteste```
+
+- ao invés de criar o volume ele vai reaproveitar o volume
+  ```docker run -d -p 80:80 --name phpmessages_container -v volumeteste:/var/www/html/ --rm phpmessages```
+
+### Listando volumes
+
+- Com o comando: ```docker volume ls``` listamos todos os volumes, sendo utilizados ou não
+- Desta maneira temos acesso aos **anonymous e os named volumes**;
+- Interessante para saber quais volumes estão criados no nosso ambiente;
+
+### Inspecionando volumes
+
+- Podemos verificar os detalhes de um volume em específico com o comando: 
+  ```docker volume inspect <nome>```
+- Desta forma temos acesso ao **local em que o volume guarda dados**, nome, escopo e muito mais;
+- O docker salva os dados dos volumes em algum diretório do nosso computador, desta forma podemos saber qual é;
+
+__Exemplificando:__
+
+- ```docker volume inspect phpvolumes```
+- retorna:
+
+"CreatedAt": "2023-08-01T02:40:06Z",
+"Driver": "local",
+"Labels": null,
+"Mountpoint": "/var/lib/docker/volumes/phpvolume/_data",
+"Name": "phpvolume",
+"Options": null,
+"Scope": "local"
+
+- "Mountpoint" é onde fica savo os arquivos, é fácil achar no linux porém no windows precisa procurar onde o docker foi instalado
+
+### Removendo volumes
+
+- Podemos também remover um volume existente de forma fácil;
+- Vamos utilizar o comando ```docker volume rm <nome>```
+- Observe que **os dados serão removidos todos também**, tome cuidado com este comando;
+
+__Exemplificando:__
+
+- ```docker volume rm volumeteste```
+- ```docker volume rm phpvolume```
+- ```docker volume rm 9cffd107d61fef51ac5cb9179fe497dfee4592c5307d4be7fa543e7216c319fd```
+
+### Remoção de volumes em massa
+
+- Podemos **remover todos os volumes que não estão sendo utilizados** com apenas um comando
+- O comando é: ```docker volume prune```
+- Semelhante ao prune que remove imagens e containers, visto anteriormente;
+
+__Exemplificando:__
+
+- iremos criar alguns volumes para apagar em massa
+- ```docker volume create vol1```
+- ```docker volume create vol2```
+- ```docker volume create vol3```
+- ```docker volume create vol4```
+- ```docker volume create vol5```
+- ```docker volume ls```
+- ```docker volume prune```
+
+==complemento a aula== : 
+
+- Se você criou volumes personalizados usando o comando ```docker volume create``` ou montou volumes manualmente ao iniciar contêineres, esses volumes também não serão removidos pelo ```docker volume prune```, mesmo que não estejam associados a nenhum contêiner. O comando ```docker volume prune``` é projetado para remover apenas os volumes "dangling".
+
+- O uso da opção **--force** pode garantir que qualquer cache de volumes seja limpo antes de listar os volumes novamente
+  ```docker volume prune --force```
+
+- mesmo assim não conseguir apagar todos, tive de apagar de um por um utilizando o comando ```docker volume rm vol1```
+
+### Volume somente leitura
+
+- Podemos criar um volume que tem **apenas permissão de leitura**, isso é útil em algumas aplicações;
+- Para realizar esta configuração devemos utilizar o comando 
+  ```docker run -v volume:/data:ro```
+- Este **:ro** é a abreviação de read only;
+
+__Exemplificando:__
+
+- vamos criar um volume de leitura:
+  ```docker run -d -p 80:80 --name phpmessages_container -v volumeleitura:/var/www/html:ro --rm phpmessages```
+
+- ao abrir o local host: 
+
+Warning: fopen(./messages/msg-0.txt): Failed to open stream: Read-only file system in /var/www/html/process.php on line 11
+
+Fatal error: Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, bool given in /var/www/html/process.php:14 Stack trace: #0 /var/www/html/process.php(14): fwrite(false, 'asda') #1 {main} thrown in /var/www/html/process.php on line 14
+
+## Conectando containers com networks
+
+### O que são networks?
+
+- **Uma forma de gerenciar a conexão do Docker** com outras plataformas ou até mesmo entre containers;
+- As redes ou networks são **criadas separadas do containers**, como os volumes;
+- Além disso existem alguns **drivers de rede**, que veremos em seguida;
+- Uma rede deixa muito simples a comunicação entre containers;
+- Teoricamente criamos uma rede para os containers utilizarem, o modo bridge é o mais utilizado
+
+### Tipos de conexão
+
+- Os containers costumam ter três principais tipos de comunicação;
+- **Externa:** conexão com uma API de um servidor remoto;
+- **Com o host:** comunicação com a máquina que está executando o Docker;
+- **Entre containers:** comunicação que utiliza o driver bridge e permite a comunicação entre dois ou mais containers;
+
+### Tipos de rede (Drivers)
+
+- **Bridge:** o mais comum e default do Docker, utilizado quando containers precisam se conectar (na maioria das vezes optamos por este driver);
+- **Host:** permite a conexão entre um container a máquina que está hosteando o Docker
+- **Macvlan:** permite a conexão a um container por um MAC address;
+- **None:** remove todas conexões de rede de um container;
+- **Plugins:** permite extensões de terceiros para criar outras redes;
+
+### Listando Networks (redes)
+
+- Podemos verificar todas as redes do nosso ambiente com : ```docker network ls```
+- **Algumas redes já estão criadas**, estas fazem parte da configuração inicial do docker
+
+### Criando redes
+
+- Para criar uma rede vamos utilizar o comando ```docker network create <nome>```
+- Esta rede será do tipo **bridge**, que é o mais utilizado;
+- Podemos criar diversas redes; 
+```docker network create minharedeteste```
+- utilizamos a **flag -d** para especificar um driver (host, macvlan, none, plugins)
+- criando uma rede com um driver específico:
+  ```docker network create -d macvlan meumacvlan```
+
+### Removendo redes
+
+- Podemos remover redes de forma simples também: ```docker network rm <nome>```
+- Assim **a rede não estará mais disponível** para utilizarmos;
+- Devemos tomar cuidado com containers já conectados;
+  ```docker network rm meumacvlan```
+  ```docker network rm minharedeteste```
+
+### Removendo redes não utilizadas
+
+- Podemos remover redes de forma simples também: ```docker network prune```
+- Assim **todas as redes não utilizadas** no momento serão removidas;
+- Todas as redes padrão do docker só podem ser removidas manualmente com o rm;
+- Receberemos uma mensagem de confirmação do docker antes da ação ser executada
+- Tomar cuidado, se utilizarmos o comando rm no container podemos apagar a rede junto
+
+### Instalando o Postman
+
+- Vamos criar uma **API** para testar a conexão entre containers;
+- Para isso vamos utilizar o software **Postman**, que é o mais utilizado do mercado para desenvolvimentos de APIs;
+- [Link](https://www.postman.com/downloads)
+- Fazer o download e instalar normalmente
+
+### Conexão Externa
+
+- Os containers **podem se conectar livremente ao mundo externo**;
+- Um caso seria: uma API de código aberto;
+- Podemos acessá-la livremente e utilizar seus dados;
+- Vamos testar!
+
+__Exemplificando:__
+
+Criando o Dockerfile
+- [Dockerfile](./3_networks/1_externa/Dockerfile)
+
+- Depois criando o app.py
+
+- agora vamos buildar a imagem:
+  ```docker build -t flaskexterna .```
+
+- agora vamos rodar um container baseado na imagem:
+  ```docker run -d -p 5000:5000 --name flaskexternocontainer --rm flaskexterna```
+
+- abrir o postman:
+  - New / http
+  - GET / http://localhost:5000/
+  - SEND
+
+- Criamos uma API de Flask baseada em um container de docker que conecta com o mundo externo com sucesso
+
+### Conexão com máquina host
+
+- Podemos também **conectar um container com o host do Docker**;
+- **Host** é a máquina que está executando o Docker;
+- Como ip de host utilizamos: **host.docker.internal**
+- No caso pode ser a nossa mesmo!
+
+__Exemplificando:__
+
+- precisamos de mysql instalado no pc para ver funcionando
+- agora vamos criar um docker file e app.py
+- vamos até a nova pasta e
+- ```docker build -t flaskhost```
+
+- agora vamos até o sql e criamos um banco de dados
+- name = flaskhost
+- e criamos uma tabela de user com: id(INT(11)), name(VARCHAR(255))
+
+- agora vamos rodar um container baseado na imagem:
+  ```docker run -d -p 5000:5000 --name flaskhostcontainer --rm flaskhost```
+
+- abrir o postman:
+  - New / http
+  - GET / http://localhost:5000/
+  - SEND
+
+- new / http
+- POST / http://localhost:5000/inserthost
+- SEND
+
+### Conexão entre containers
+
+- No exemplo acima os dados foram salvos no computador, agora será salvo no container
+- Podemos estabelecer uma **conexão entre containers**;
+- Duas imagens distintas rodando em **containers separados que precisam se conectar para inserir um dado no banco**, por exemplo;
+- Vamos precisar de uma rede **bridge**, para fazer esta conexão;
+- Agora nosso container de flask vai inserir dados em um MySQL que roda pelo Docker também
+
+__Exemplificando:__
+
+- Criamos um diretório mysql com um schema e um dockerfile
+- navegamos até a pasta 3_conexoes_entre_containers/mysql
+- ```docker build -t mysqlnetworkapi .```
+- ```docker network create flasknetwork```
+- ```docker run -d -p 3306:3306 --name mysql_api_container --rm --network flasknetwork -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysqlnetworkapi```
+- agora temos mysql rodando dentro do container de docker
+- agora vamos no arquivo app.py dentro do diretório flask
+- colocamos para o mysql se conectar ao container ao inves do host
+  ```app.config['MYSQL_HOST'] = 'mysql_api_container'```
+- depois de alterar vamos precisar fazer o build dessa imagem novamente
+- ```docker build -t flaskapinetwork .```
+- precisamos externalizar esse container pois vamos acessar via postman
+- ```docker run -d -p 5000:5000 --name flask_api_container --rm --network flasknetwork flaskapinetwork```
+- vamos abrir o postman e testar a rota de GET http://localhost:5000/
+- adicionamos outra  aba: POST http://localhost:5000/inserthost
+
+### Conexão entre containers
+
+- Podemos conectar um container a uma rede;
+- Vamos utilizar o comando ```docker network connect <rede> <container>```
+- Após o comando o container estará dentro da rede!
+
+__Exemplificando:__
+
+- ```docker network connect flasknetwork d50423d1926c```
+- ao utilizar o inspect no container, veremos que ele foi conectado a rede
+  ```docker inspect d50423d1926c```
+
+### Desconectando um container
+
+- Podemos desconectar um container a uma rede também;
+- Vamos utilizar o comando ```docker network disconnect <rede> <container>```
+- Após o comando o container estará fora da rede!
+
+__Exemplificando:__
+
+- ```docker network disconnect flasknetwork d50423d1926c```
+- ao utilizar o inspect no container, veremos que ele foi desconectado a rede
+  ```docker inspect d50423d1926c```
+
+### Inspecionando redes
+
+- Podemos analisar os detalhes de uma rede com o comando: 
+  ```docker network inspect <nome>```
+- Vamos receber informações como: data de criação, driver, nome e muito mais!
+- ao entrar em uma empresa podemos inspecionar a rede para conhecer a rede.
+
+__Exemplificando:__
+
+- ```docker network inspect flasknetwork```
+
+## Introdução ao YAML
