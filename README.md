@@ -17,7 +17,7 @@
 - [x] [**Sprint #1**](#sprint-1)
 - [x] [**Sprint #2**](#sprint-2)
 - [x] [**Sprint #3**](#sprint-3)
-- [ ] [**Sprint #4**](#sprint-4)
+- [x] [**Sprint #4**](#sprint-4)
 - [ ] [**Sprint #5**]()
 - [ ] [**Sprint #6**]()
 - [ ] [**Sprint #7**]()
@@ -119,14 +119,17 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 ## Sprint #4
 
-- [****]()
-- [**Docker para Desenvolvedores (com Docker Swarm e Kubernetes)**]()
-- [****]()
+- [**Estatística Descritiva com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/estatistica_descritiva_python/estatistica.md)
+- [**Docker para Desenvolvedores (com Docker Swarm e Kubernetes)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/docker_e_kubernetes/docker.md)
+- [**Programação funcional com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/cursoPython/programacao_funcional.md)
+- [**Programação funcional: O que é?**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/artigo_prog_funcional.md)
 
 
 <details><summary>Certificados</summary>
   
-- []()
+- [**Docker**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/docker_certificado.jpg)
+- [**Estatística Descritiva**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/estatistica_certificado.jpg)
+- [Segurança](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/seguranca_certificado.jpg)
 
 </details>
 
