@@ -129,7 +129,8 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
   
 - [**Docker**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/docker_certificado.jpg)
 - [**Estatística Descritiva**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/estatistica_certificado.jpg)
-- [Segurança](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/seguranca_certificado.jpg)
+- [**Segurança**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/seguranca_certificado.jpg)
+- [**Métodos ágeis**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/metodos_ageis_certificado.jpg)
 
 </details>
 
