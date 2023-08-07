@@ -4,6 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 80
-
 CMD ["python", "app/carguru.py"]

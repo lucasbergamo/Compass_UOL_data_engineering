@@ -26,7 +26,6 @@ numeros.filter((numero) => numero % 2 === 0).map((numero) => numero * 2)
 // [ 4, 8, 12, 16, 20 ]
 ```
 
-
 ## Funções Puras
 
 **Uma função é chamada pura quando invocada mais de uma vez produz exatamente o mesmo resultado**. Isto é, o retorno da função é sempre o mesmo se você passar os mesmos parâmetros, então ela não pode depender de valores mutáveis. Por outro lado, ela não pode causa efeitos colaterais externos, pois se ela imprime uma linha de saída, altera algo no banco, lança um foguete para o espaço, ao invocá-la a segunda vez ela vai causar um novo efeito.

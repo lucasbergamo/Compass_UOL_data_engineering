@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 3000:3000
+RUN pip install --upgrade pip
 
 CMD ["python", "app/script.py"]
