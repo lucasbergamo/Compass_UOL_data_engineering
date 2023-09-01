@@ -1,120 +1,86 @@
-# Sumário
-
-- [Sumário](#sumário)
-1. [Instalação e Introdução Git:](#instalação-e-introdução-git)
-    - [O que é controle de versão?](#o-que-é-controle-de-versão)
-    - [O que é git?](#o-que-é-git)
-    - [O que é Github?](#o-que-é-github)
-    - [Enviando repositórios para o Github](#enviando-repositórios-para-o-github)
-2. [Git Comandos Fundamentais:](#git-comandos-fundamentais)
-    - [O que é um Repositório?](#o-que-é-um-repositório)
-    - [Criando Repositórios](#criando-repositórios)
-    - [Verificando mudanças de projeto](#verificando-mudanças-de-projeto)
-    - [Adicionando arquivos ao projeto](#adicionando-arquivos-ao-projeto)
-    - [Salvando alterações do projeto](#salvando-alterações-do-projeto)
-    - [Enviando código ao repo remoto](#enviando-código-ao-repo-remoto)
-    - [Recebendo as mudanças](#recebendo-as-mudanças)
-    - [Clonando repositórios](#clonando-repositórios)
-    - [Removendo arquivos do repo](#removendo-arquivos-do-repo)
-    - [Histórico de alterações](#histórico-de-alterações)
-    - [Renomeando arquivos](#renomeando-arquivos)
-    - [Desfazendo alterações](#desfazendo-alterações)
-    - [Ignorando arquivos no projeto](#ignorando-arquivos-no-projeto)
-    - [Resetando uma branch / Desfazendo todas as alterações](#resetando-uma-branch--desfazendo-todas-as-alterações)
-- [Sumário](#sumário)
-  - [Instalação e Introdução Git:](#instalação-e-introdução-git)
-    - [O que é controle de versão?](#o-que-é-controle-de-versão)
-    - [O que é git?](#o-que-é-git)
-    - [O que é Github?](#o-que-é-github)
-    - [Enviando repositórios para o Github](#enviando-repositórios-para-o-github)
-  - [Git Comandos Fundamentais:](#git-comandos-fundamentais)
-    - [O que é um Repositório?](#o-que-é-um-repositório)
-    - [Criando Repositórios](#criando-repositórios)
-    - [Verificando mudanças de projeto](#verificando-mudanças-de-projeto)
-    - [Adicionando arquivos ao projeto](#adicionando-arquivos-ao-projeto)
-    - [Salvando alterações do projeto](#salvando-alterações-do-projeto)
-    - [Enviando código ao repo remoto](#enviando-código-ao-repo-remoto)
-    - [Recebendo as mudanças](#recebendo-as-mudanças)
-    - [Clonando repositórios](#clonando-repositórios)
-    - [Removendo arquivos do repo](#removendo-arquivos-do-repo)
-    - [Histórico de alterações](#histórico-de-alterações)
-    - [Renomeando arquivos](#renomeando-arquivos)
-    - [Desfazendo alterações](#desfazendo-alterações)
-    - [Ignorando arquivos no projeto](#ignorando-arquivos-no-projeto)
-    - [Resetando uma branch / Desfazendo todas as alterações](#resetando-uma-branch--desfazendo-todas-as-alterações)
-  - [Trabalhando com Branchs, Stash, Tags:](#trabalhando-com-branchs-stash-tags)
-    - [O que é um branch?](#o-que-é-um-branch)
-    - [Criando e visualizando os branches](#criando-e-visualizando-os-branches)
-    - [Deletando branches](#deletando-branches)
-    - [Mudando de branch](#mudando-de-branch)
-    - [Unindo branches](#unindo-branches)
-    - [Stash](#stash)
-    - [Recuperando Stash](#recuperando-stash)
-    - [Removendo a Stash](#removendo-a-stash)
-    - [Utilizando tags](#utilizando-tags)
-    - [Verificando e alterando tags](#verificando-e-alterando-tags)
-    - [Enviando e compartilhando tags](#enviando-e-compartilhando-tags)
-  - [Compartilhamento e atualizações de repositórios:](#compartilhamento-e-atualizações-de-repositórios)
-    - [Encontrando branches](#encontrando-branches)
-    - [Recebendo alterações](#recebendo-alterações)
-    - [Enviando alterações](#enviando-alterações)
-    - [Utilizando o remote](#utilizando-o-remote)
-    - [Trabalhando com submódulos](#trabalhando-com-submódulos)
-    - [Atualizando submódulo](#atualizando-submódulo)
-  - [Análise e inspeção de repositórios:](#análise-e-inspeção-de-repositórios)
-    - [Exibindo informações](#exibindo-informações)
-    - [Exibindo diferenças](#exibindo-diferenças)
-    - [Log resumido](#log-resumido)
-  - [Administração de repositórios:](#administração-de-repositórios)
-    - [Limpando arquivos untracked](#limpando-arquivos-untracked)
-    - [Otimizando o repositório](#otimizando-o-repositório)
-    - [Checando integridade de arquivos](#checando-integridade-de-arquivos)
-    - [Reflog](#reflog)
-    - [Transformando o repo para arquivo](#transformando-o-repo-para-arquivo)
-  - [Melhorando os commits do projeto:](#melhorando-os-commits-do-projeto)
-    - [A importância do commit](#a-importância-do-commit)
-    - [Branches com commits ruins](#branches-com-commits-ruins)
-    - [Boas mensagens de commit](#boas-mensagens-de-commit)
-  - [Explorando e entendendo o GitHub:](#explorando-e-entendendo-o-github)
-    - [Criando Repositório](#criando-repositório)
-    - [A aba Code](#a-aba-code)
-    - [A aba issue](#a-aba-issue)
-    - [A aba Pull Request](#a-aba-pull-request)
-    - [A aba actions](#a-aba-actions)
-    - [Na aba Projects](#na-aba-projects)
-    - [A aba Wiki](#a-aba-wiki)
-    - [A aba insights](#a-aba-insights)
-    - [A aba Settings](#a-aba-settings)
-    - [Criando um Gist](#criando-um-gist)
-    - [Encontrando Repositórios](#encontrando-repositórios)
-  - [Markdown do básico ao avançado:](#markdown-do-básico-ao-avançado)
-    - [O que é Markdown?](#o-que-é-markdown)
-    - [Cabeçalhos](#cabeçalhos)
-    - [Ênfase no texto](#ênfase-no-texto)
-    - [Listas](#listas)
-    - [Imagens](#imagens)
-    - [Links](#links)
-    - [Código - Github](#código---github)
-    - [Task list - Github](#task-list---github)
-  - [Projeto: Portifólio com Github Pages:](#projeto-portifólio-com-github-pages)
-    - [O que é github pages](#o-que-é-github-pages)
-    - [Como criar a página](#como-criar-a-página)
-
+**Sumário**
 
 [Retornar](https://github.com/lucasbergamo/Compass_UOL_data_engineering)
 
 <details><summary><strong>Navegação</strong></summary>
 
-1. [Instalação e Introdução Git](#instalação-e-introdução-git)
-2. [Git Comandos Fundamentais](#git-comandos-fundamentais)
-3. [Trabalhando com Branchs, Stash, Tags](#trabalhando-com-branchs-stash-tags)
-4. [Compartilhamento e atualizações de repositórios](#compartilhamento-e-atualizações-de-repositórios)
-5. [Análise e inspeção de repositórios](#análise-e-inspeção-de-repositórios)
-6. [Administração de repositórios](#administração-de-repositórios)
-7. [Melhorando os commits do projeto](#melhorando-os-commits-do-projeto)
-8. [Explorando e entendendo o GitHub](#explorando-e-entendendo-o-github)
-9. [Markdown do básico ao avançado](#markdown-do-básico-ao-avançado)
-10. [Projeto: Portifólio com Github Pages](#projeto-portifólio-com-github-pages)
+- [Instalação e Introdução Git:](#instalação-e-introdução-git)
+  - [O que é controle de versão?](#o-que-é-controle-de-versão)
+  - [O que é git?](#o-que-é-git)
+  - [O que é Github?](#o-que-é-github)
+  - [Enviando repositórios para o Github](#enviando-repositórios-para-o-github)
+- [Git Comandos Fundamentais:](#git-comandos-fundamentais)
+  - [O que é um Repositório?](#o-que-é-um-repositório)
+  - [Criando Repositórios](#criando-repositórios)
+  - [Verificando mudanças de projeto](#verificando-mudanças-de-projeto)
+  - [Adicionando arquivos ao projeto](#adicionando-arquivos-ao-projeto)
+  - [Salvando alterações do projeto](#salvando-alterações-do-projeto)
+  - [Enviando código ao repo remoto](#enviando-código-ao-repo-remoto)
+  - [Recebendo as mudanças](#recebendo-as-mudanças)
+  - [Clonando repositórios](#clonando-repositórios)
+  - [Removendo arquivos do repo](#removendo-arquivos-do-repo)
+  - [Histórico de alterações](#histórico-de-alterações)
+  - [Renomeando arquivos](#renomeando-arquivos)
+  - [Desfazendo alterações](#desfazendo-alterações)
+  - [Ignorando arquivos no projeto](#ignorando-arquivos-no-projeto)
+  - [Resetando uma branch / Desfazendo todas as alterações](#resetando-uma-branch--desfazendo-todas-as-alterações)
+- [Trabalhando com Branchs, Stash, Tags](#trabalhando-com-branchs-stash-tags)
+  - [O que é um branch?](#o-que-é-um-branch)
+  - [Criando e visualizando os branches](#criando-e-visualizando-os-branches)
+  - [Deletando branches](#deletando-branches)
+  - [Mudando de branch](#mudando-de-branch)
+  - [Unindo branches](#unindo-branches)
+  - [Stash](#stash)
+  - [Recuperando Stash](#recuperando-stash)
+  - [Removendo a Stash](#removendo-a-stash)
+  - [Utilizando tags](#utilizando-tags)
+  - [Verificando e alterando tags](#verificando-e-alterando-tags)
+  - [Enviando e compartilhando tags](#enviando-e-compartilhando-tags)
+- [Compartilhamento e atualizações de repositórios](#compartilhamento-e-atualizações-de-repositórios)
+  - [Encontrando branches](#encontrando-branches)
+  - [Recebendo alterações](#recebendo-alterações)
+  - [Enviando alterações](#enviando-alterações)
+  - [Utilizando o remote](#utilizando-o-remote)
+  - [Trabalhando com submódulos](#trabalhando-com-submódulos)
+  - [Atualizando submódulo](#atualizando-submódulo)
+- [Análise e inspeção de repositórios:](#análise-e-inspeção-de-repositórios)
+  - [Exibindo informações](#exibindo-informações)
+  - [Exibindo diferenças](#exibindo-diferenças)
+  - [Log resumido](#log-resumido)
+- [Administração de repositórios:](#administração-de-repositórios)
+  - [Limpando arquivos untracked](#limpando-arquivos-untracked)
+  - [Otimizando o repositório](#otimizando-o-repositório)
+  - [Checando integridade de arquivos](#checando-integridade-de-arquivos)
+  - [Reflog](#reflog)
+  - [Transformando o repo para arquivo](#transformando-o-repo-para-arquivo)
+- [Melhorando os commits do projeto](#melhorando-os-commits-do-projeto)
+  - [A importância do commit](#a-importância-do-commit)
+  - [Branches com commits ruins](#branches-com-commits-ruins)
+  - [Boas mensagens de commit](#boas-mensagens-de-commit)
+- [Explorando e entendendo o GitHub:](#explorando-e-entendendo-o-github)
+  - [Criando Repositório](#criando-repositório)
+  - [A aba Code](#a-aba-code)
+  - [A aba issue](#a-aba-issue)
+  - [A aba Pull Request](#a-aba-pull-request)
+  - [A aba actions](#a-aba-actions)
+  - [Na aba Projects](#na-aba-projects)
+  - [A aba Wiki](#a-aba-wiki)
+  - [A aba insights](#a-aba-insights)
+  - [A aba Settings](#a-aba-settings)
+  - [Criando um Gist](#criando-um-gist)
+  - [Encontrando Repositórios](#encontrando-repositórios)
+- [Markdown do básico ao avançado:](#markdown-do-básico-ao-avançado)
+  - [O que é Markdown?](#o-que-é-markdown)
+  - [Cabeçalhos](#cabeçalhos)
+  - [Ênfase no texto](#ênfase-no-texto)
+  - [Listas](#listas)
+  - [Imagens](#imagens)
+  - [Links](#links)
+  - [Código - Github](#código---github)
+  - [Task list - Github](#task-list---github)
+- [Projeto: Portifólio com Github Pages:](#projeto-portifólio-com-github-pages)
+  - [O que é github pages](#o-que-é-github-pages)
+  - [Como criar a página](#como-criar-a-página)
 
 </details>
 
@@ -172,9 +138,9 @@ Download Visual Studio Code - Mac, Linux, Windows;
 
 ### Criando Repositórios
 
-- Para criar um repositório utilizamos o comando: git init;
+- Para criar um repositório utilizamos o comando: ```git init```;
 - Desta maneira o git vai criar os arquivos necessários para inicializá-lo;
-- que estão na pasta oculta .git; ls -la;
+- que estão na pasta oculta .git; ```ls -la```;
 - Após este comando o diretório atual será reconhecido pelo git como um projeto e responderá aos seus demais - comandos;
 
 ```
@@ -184,8 +150,9 @@ git config –global user.email””
 git config –global defaultBranch main
 git status
 git add .
-git commit -m “”
+git commit -m “mensagem”
 git remote add origin
+git pull
 git push -u origin main
 ```
 ### Verificando mudanças de projeto
@@ -206,35 +173,35 @@ git push -u origin main
 
 ### Salvando alterações do projeto
 
-- As alterações salvas do projeto são realizadas por: git commit;
-- Podemos commitar arquivos específicos ou vários de uma vez com a flag -a;
+- As alterações salvas do projeto são realizadas por: ```git commit -m ""```;
+- Podemos commitar arquivos específicos ou vários de uma vez com a ```flag -a```;
 - É uma boa prática enviar uma mensagem a cada commit, com as alterações que foram feitas;
-- A mensagem pode ser adicionada com a flag -m;
+- A mensagem pode ser adicionada com a ```flag -m```;
 
 ### Enviando código ao repo remoto
 
 - Quando finalizamos uma funcionalidade nova, enviamos o código ao repositório remoto, que é o código-fonte;
-- Esta ação é feito pelo git push;
+- Esta ação é feito pelo ```git push -u origin main```;
 - Após esta ação o código do servidor será atualizado baseando-se nesse código local enviado;
 
 ### Recebendo as mudanças
 
 - é comum também ter que sincronizar o local com as mudanças do remoto;
-- Esta ação é feita pelo git pull;
+- Esta ação é feita pelo ```git pull```;
 - Após o comando  serão buscadas atualizações, se encontradas elas serão unidas ao código atual existente na nossa máquina;
 
 ### Clonando repositórios
 
 - O ato de baixar um repositório de um servidor remoto é chamado de clonar repositório;
-- Para esta ação utilizamos git clone;
+- Para esta ação utilizamos ```git clone```;
 - Passando a referência do repositório remoto;
 - Este comando é utilizado quando entramos em um novo projeto, por exemplo;
-- git clone <link> <novo nome para o repo>;
+- ```git clone <link> <novo nome para o repo>```;
 
 ### Removendo arquivos do repo
 
 - Os arquivos podem ser deletados da monitoração do git;
-- O comando para deletar é git rm;
+- O comando para deletar é ```git rm```;
 - Após deletar um arquivo do git ele não terá mais suas atualizações consideradas pelo git;
 - Apenas quando for adicionado novamente pelo git add;
 
@@ -250,8 +217,8 @@ git push -u origin main
 - O mesmo também pode ser movido para outra pasta;
 - E isso fará com que este novo arquivo seja monitorado pelo git;
 - O arquivo anterior é excluído;
-- exemplo mover arquivo: git mv rodape.css css/rodape.css;
-- exemplo renomear arquivo: git mv css/banner.css css/banner2.css;
+- exemplo mover arquivo: ```git mv rodape.css css/rodape.css```;
+- exemplo renomear arquivo: ```git mv css/banner.css css/banner2.css```;
 
 ### Desfazendo alterações
 
@@ -269,18 +236,18 @@ git push -u origin main
 - Nele podemos inserir todos os arquivos que não devem entrar no versionamento;
 - isso é útil para arquivos gerados automaticamente ou arquivos que contém informações sensíveis;
 - primeiro adicionar o arquivo ou pasta no .gitignore e depois criar a mesma;
-- node_modules/*  = todos arquivos dentro dessa pasta serão ignorados;
+- ```node_modules/*```  = todos arquivos dentro dessa pasta serão ignorados;
 
 ### Resetando uma branch / Desfazendo todas as alterações
 
 - com o comando git reset podemos resetar as mudanças feitas;
-- Geralmente é utilizado com a flag –hard;
+- Geralmente é utilizado com a **flag –hard**;
 - Todas as alterações commitadas e também as pendentes serão excluídas;
-- git reset –hard origin/main;
+- ```git reset –hard origin/main```;
 
 ----------
 
-## Trabalhando com Branchs, Stash, Tags:
+## Trabalhando com Branchs, Stash, Tags
 
 ### O que é um branch?
 
@@ -291,20 +258,20 @@ git push -u origin main
 
 ### Criando e visualizando os branches
 
-Para visualizar os branches disponíveis basta digitar git branch;
-Para criar uma branch você precisa utilizar o comando git branch <nome>;
+Para visualizar os branches disponíveis basta digitar ```git branch;```
+Para criar uma branch você precisa utilizar o comando ```git branch <nome>```;
 Essas duas operações são muito utilizadas no dia a dia do dev;
 
 ### Deletando branches
 
-- Podemos deletar um branch com a flag –d ou –delete;
+- Podemos deletar um branch com a ```flag –d ou –delete```;
 - Não é comum deletar um branch, normalmente guardamos o histórico do trabalho;
 - Geralmente se usa o delete quando o branch foi criado errado;
 
 ### Mudando de branch
 
-- Para mudar para outra branch utilizamos git checkout <nome da branch>;
-- Podemos mudar para outro branch utilizando o comando git checkout -b <nome>;
+- Para mudar para outra branch utilizamos ```git checkout <nome da branch>```;
+- Podemos mudar para outro branch utilizando o comando ```git checkout -b <nome>```;
 - Esse código cria um novo branch e já muda para ele caso não exista;
 - Este comando também é utilizado para dispensar mudanças de um arquivo;
 - Alterando o branch podemos levar alterações que não foram commitadas junto, tome cuidado!;
@@ -312,7 +279,7 @@ Essas duas operações são muito utilizadas no dia a dia do dev;
 
 ### Unindo branches
 
-- O código de dois branches distintos pode ser unido pelo comando git merge <nome>;
+- O código de dois branches distintos pode ser unido pelo comando```git merge <nome>```;
 - Outro comando para a lista dos mais utilizados;
 - Normalmente é por meio dele que recebemos as atualizações de outros devs;
 - Nunca utilizar o merge estando na master/main;
@@ -320,55 +287,58 @@ Essas duas operações são muito utilizadas no dia a dia do dev;
 ### Stash
 
 - Podemos salvar as modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código;
-- O comando para esta ação é o git stash;
+- O comando para esta ação é o ```git stash```;
 - Após o comando o branch será resetado para a sua versão de acordo com o repo;
 
 ### Recuperando Stash
 
-- Podemos verificar as stashs criadas pelo comando git stash list;
-- git stash apply <0,1,2,3…> aplica a stash novamente ao branch;
-- também podemos recuperar a stach com o comando git stash <nome>;
+- Podemos verificar as stashs criadas pelo comando ```git stash list```;
+- ```git stash apply <0,1,2,3…>``` aplica a stash novamente ao branch;
+- também podemos recuperar a stach com o comando ```git stash <nome>```;
 - Desta maneira podemos continuar de onde paramos com os arquivos adicionados a stash;
 
 ### Removendo a Stash
 
-- Para limpar totalmente as stash de um branch podemos utilizar o comando git stash clear;
-- Caso seja necessário deletar uma stash específica podemos utilizar git stash drop <nome>;
+- Para limpar totalmente as stash de um branch podemos utilizar o comando 
+  ```git stash clear```;
+- Caso seja necessário deletar uma stash específica podemos utilizar 
+  ```git stash drop <nome>```;
 
 ### Utilizando tags
 
-- Podemos criar tags nos branches por meio do comando git tag -a <nome> -m “<msg>”;
+- Podemos criar tags nos branches por meio do comando 
+  ```git tag -a <nome> -m “<msg>”```
 - A tag é diferente da stash, serve como um checkpoint de um branch;
 - É utilizada para demarcar estágios do desenvolvimento de algum recurso;
 - cria um ponto de recuperação para avançar ou retroceder;
 
 ### Verificando e alterando tags
 
-- Podemos verificar as tags com o comando git tag;
-- Podemos verificar uma tag com o comando git show <nome>;
-- Podemos trocar de tags com o comando git checkout <nome>;
+- Podemos verificar as tags com o comando ```git tag```;
+- Podemos verificar uma tag com o comando ```git show <nome>```;
+- Podemos trocar de tags com o comando ```git checkout <nome>```;
 - Desta maneira podemos retroceder ou avançar em checkpoints de um branch;
 
 ### Enviando e compartilhando tags
 
 - As tags podem ser enviadas para o repositório de código, sendo compartilhada entre os devs;
-- O comando é git push origin <nome_da_tag>;
-- Ou se você quiser enviar todas as tags git push origin –tags;
+- O comando é ```git push origin <nome_da_tag>```;
+- Ou se você quiser enviar todas as tags ```git push origin –tags```;
 
 ----------
 
-## Compartilhamento e atualizações de repositórios:
+## Compartilhamento e atualizações de repositórios
 
 ### Encontrando branches
 
 - Branches novos são criados a todo tempo e o seu git pode não estar mapeando eles
 - Com o mando git fetch você é atualizado de todos os branchs e tags
 - Este comando é últil para utilizar o branch de algum outro dev do time, por exemplo
-git fetch -a, vai juntar tudo;
+```git fetch -a```, vai juntar tudo;
 
 ### Recebendo alterações
 
-- O comando git pull serve para recebermos atualizações do repositório remoto
+- O comando ```git pull``` serve para recebermos atualizações do repositório remoto
 Cada branch pode ser atualizado com o git pull
 - Utilizamos para atualizar a master do repo como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev: 
 
@@ -391,11 +361,11 @@ git pull
 - O comando git push faz o inverso do pull, ele envia alterações para o repo remoto;
 - Serve também para enviar as atualizações de um branch específico para outro dev;
 - Ou quando terminamos uma tarefa e precisamos enviar ao repo;
-- não enviar pastas repetidas, utilizar o .gitignore para colocar pastas como node_modules;
+- não enviar pastas repetidas, utilizar o ```.gitignore``` para colocar pastas como node_modules;
 
 ### Utilizando o remote
 
-- Com o git remote podemos fazer algumas ações como: adicionar um repo para trackear ou remover;
+- Com o ```git remote``` podemos fazer algumas ações como: adicionar um repo para trackear ou remover;
 - Quando criamos um repo remoto, adicionamos ele ao git com:  
 
 ```
@@ -408,14 +378,15 @@ git remote add origin <link>
 
 - Submódulo é a maneira que temos de possuir dois ou mais projetos em um só repositório;
 - Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas;
-- Para adicionar o submódulo utilizamos o comando git submodule add <repo>;
-- Para verificar os submódulos o comando é git submodule;
+- Para adicionar o submódulo utilizamos o comando ```git submodule add <repo>```;
+- Para verificar os submódulos o comando é ```git submodule```;
 - Podemos utilizar o submodulo para colocar bibliotecas e atualiza-las constantemente;
 
 ### Atualizando submódulo
 
 - Para atualizar um submódulo , primeiro devemos commitar as mudanças;
-- Para enviar para o repo do submódulo utilizamos git push –recurse-submodules=on-demand;
+- Para enviar para o repo do submódulo utilizamos 
+  ```git push –recurse-submodules=on-demand```;
 - Este fluxo fará a atualização apenas do submódulo;
 
 ----------
@@ -424,21 +395,24 @@ git remote add origin <link>
 
 ### Exibindo informações
 
-- O comando git show nos dá diversas informações úteis;
+- O comando ```git show``` nos dá diversas informações úteis;
 - Ele nos dá as informações do branch atual e também seus commits;
 - As modificações de arquivos entre cada commit também são exibidas;
-- Podemos exibir as informações de tags também com: git show <tag>;
+- Podemos exibir as informações de tags também com: ```git show <tag>```;
 
 ### Exibindo diferenças
 
-- O comando git diff serve para exibir as diferenças de um branch;
+- O comando ```git diff``` serve para exibir as diferenças de um branch;
 - Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
-- Podemos também verificar a diferença entre arquivos git diff <arquivo> <arquivo_b>;
-- git checkout -b “testando_Show” - git commit -m”adicionando”- git diff master;
+- Podemos também verificar a diferença entre arquivos 
+  ```git diff <arquivo> <arquivo_b>```
+- ```git checkout -b “testando_Show”```  
+- ```git commit -m”adicionando”``` 
+- ```git diff master```
 
 ### Log resumido
 
-- O comando git shortlog nos dá um log resumido do projeto;
+- O comando ```git shortlog``` nos dá um log resumido do projeto;
 - Cada commit será unido por nome do autor;
 - Podemos então saber quais commits foram enviados ao projeto e por quem;
 - gera informações de todo o projeto, não importa a branch;
@@ -449,41 +423,41 @@ git remote add origin <link>
 
 ### Limpando arquivos untracked
 
-- O comando git clean vai verificar e limpar arquivos que não estão sendo trackeados;
-- Ou seja, todos que você não utilizou git add;
+- O comando ```git clean``` vai verificar e limpar arquivos que não estão sendo trackeados;
+- Ou seja, todos que você não utilizou ```git add```;
 - Utilizado para arquivos que são gerados automaticamente, por exemplo, e atrapalham a visualização do que é - realmente importante;
-- git clean -f;
-- Utilizar o git add antes do git clean para salvar oq deseja;
+- ```git clean -f```;
+- Utilizar o git add antes do git clean para salvar o que deseja;
 
 ### Otimizando o repositório
 
-- O comando git gc é uma abreviação para garbage collector;
+- O comando ```git gc``` é uma abreviação para garbage collector;
 - Ele identifica arquivos que não são mais necessários e os exclui;
 - Isso fará com que o repositório seja otimizado em questões de performance;
 
 ### Checando integridade de arquivos
 
-- O comando git fsck é uma abreviação de File System Check;
+- O comando ```git fsck``` é uma abreviação de File System Check;
 - Esta instrução verifica a integridade de arquivos e sua conectividade;
 - Verificando assim possíveis corrupções em arquivos;
 - Comando de rotina, utilizado para ver se está tudo certo com nossos arquivos;
 
 ### Reflog
 
-- O git reflog vai mapear todos os seus passos no repositório, até uma mudança de branch é inserida neste log;
-- Já o git log, que vimos anteriormente, apenas armazena os commits de um branch;
+- O ```git reflog``` vai mapear todos os seus passos no repositório, até uma mudança de branch é inserida neste log;
+- Já o ```git log```, que vimos anteriormente, apenas armazena os commits de um branch;
 - Os reflogs ficam salvos até expirar, o tempo de expiração padrão é de 30 dias;
-- git reset –hard <hash>;
+- ```git reset –hard <hash>```;
 
 ### Transformando o repo para arquivo
 
-- Com o comando git archive podemos transformar o repo em um arquivo compactado, por exemplo;
-- O comando é git archive –format zip –output master_files.zip master;
+- Com o comando ```git archive``` podemos transformar o repo em um arquivo compactado, por exemplo;
+- O comando é ```git archive –format zip –output master_files.zip master```;
 - E então a master vai estar zipada no arquivo master_files.zip;
 
 ----------
 
-## Melhorando os commits do projeto: 
+## Melhorando os commits do projeto
 
 ### A importância do commit
 
@@ -498,7 +472,7 @@ git remote add origin <link>
 - Há uma solução chamada private branches;
 - Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
 - Ao fim da solução do problema podemos fazer um rebase;
-- O comando será: git rebase <atual> <funcionalidade> -i;
+- O comando será: ```git rebase <atual> <funcionalidade> -i```;
 - Escolhemos os branches para excluir (squash) e renomear com (reword)
 :x!;
 
@@ -510,7 +484,7 @@ git remote add origin <link>
 - Corpo com no máximo 72 caracteres;
 - Explicar o porque e como do commit, e não como o código foi escrito;
 - apagar a ultima aspas da mensagem do commit e apertar enter para escrever mais
-git commit -m “
+- git commit -m “
 "
 ![GitCommit!](/Sprint%20-%201/1.%20Git%20-%20Github/gitmCommit.png)
 
@@ -626,13 +600,13 @@ A tela lembra muito o software Trello;
 ### Imagens
 
 - É possivel inserir imagens em markdown também;
-- Veja a sintaxe: ![Texto Alt](link imagem);
+- Veja a sintaxe: ```![Texto Alt](link imagem)```;
 - A imagem pode estar no própio repo ou ser externa;
 
 ### Links
 
 - Com o markdown podemos inserir links de forma fácil;
-- A sintaxe é a seguinte: [Texto do link](link);
+- A sintaxe é a seguinte: ```[Texto do link](link)```;
 - se for um link do github pode inserir de forma direta: https://www.github.com;
 
 ### Código - Github
@@ -668,7 +642,7 @@ return a + b;
 ### Como criar a página
 
 - Você deve seguir alguns passos simples, veja;
-- Criar um repositório com o nome <nomedousuario.github.io>;
+- Criar um repositório com o nome ```<nomedousuario.github.io>```;
 - Clonar o repositório no nosso computador;
 - Adicionar o código do projeto na branch master;
 - Enviar o código por meio de push;

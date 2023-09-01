@@ -1,22 +1,69 @@
-# Sumário
+**Sumário**
 
 [Retornar](https://github.com/lucasbergamo/Compass_UOL_data_engineering)
 
 <details><summary><strong>Navegação</strong></summary>
 
-1. [O que é Big Data](#big-data)
-2. [Sistemas de armazenamento de dados](#sistemas-de-armazenamento-de-dados)
-3. [Armazenamento e Processamento Paralelo](#armazenamento-e-processamento-paralelo)
-4. [Cloud Computing](#cloud-computing)
-5. [MLOps e DataOps](#mlops-e-dataops)
-6. [Dados como serviço](#dados-como-serviço)
-7. [ETL - extração, transformação e carga de dados](#etl---extração-transformação-e-carga-de-dados)
-8. [O que é Big Data Analytics](#o-que-é-big-data-analytics)
-9. [Como Iniciar um projeto em Big Data](#como-iniciar-um-projeto-de-big-data)
+- [Big Data](#big-data)
+- [Sistemas de armazenamento de dados](#sistemas-de-armazenamento-de-dados)
+	- [Os 4Vs do Big Data](#os-4vs-do-big-data)
+	- [Big Data x Ciência De Dados](#big-data-x-ciência-de-dados)
+	- [Exemplos De Aplicação Do Big Data Analytics](#exemplos-de-aplicação-do-big-data-analytics)
+- [O V De volume em Big Data](#o-v-de-volume-em-big-data)
+- [Bancos De Dados Relacionais X NoSQL](#bancos-de-dados-relacionais-x-nosql)
+	- [Relacional](#relacional)
+	- [NoSql](#nosql)
+	- [Data Warehouse (DW)](#data-warehouse-dw)
+	- [Benefícios do Data Warehouse](#benefícios-do-data-warehouse)
+	- [Data Lakes](#data-lakes)
+	- [Benefícios do Data Lake](#benefícios-do-data-lake)
+	- [Definindo Data Stores](#definindo-data-stores)
+	- [Benefícios do Data Store](#benefícios-do-data-store)
+	- [Sistemas Híbridos de Armazenamento](#sistemas-híbridos-de-armazenamento)
+- [Armazenamento e Processamento Paralelo](#armazenamento-e-processamento-paralelo)
+	- [O que é um Cluster de Computadores?](#o-que-é-um-cluster-de-computadores)
+	- [O que é armazenamento Paralelo?](#o-que-é-armazenamento-paralelo)
+	- [Software para armazenamento paralelo - Apache Hadoop](#software-para-armazenamento-paralelo---apache-hadoop)
+	- [Processamento paralelo de Big Data](#processamento-paralelo-de-big-data)
+	- [Arquitetura de armazenamento e processamento paralelo](#arquitetura-de-armazenamento-e-processamento-paralelo)
+	- [Soluções de armazenamento e processamento Paralelo](#soluções-de-armazenamento-e-processamento-paralelo)
+- [Cloud Computing](#cloud-computing)
+	- [Cloud Computing e Big Data](#cloud-computing-e-big-data)
+	- [Principais Provedores em Nuvem](#principais-provedores-em-nuvem)
+- [MLOps e DataOps](#mlops-e-dataops)
+	- [O que é Machine Learning?](#o-que-é-machine-learning)
+	- [O Pipeline de Machine Learning](#o-pipeline-de-machine-learning)
+	- [O que é machine learning Ops?](#o-que-é-machine-learning-ops)
+	- [DevOps, MLOps, AIOps e DataOps](#devops-mlops-aiops-e-dataops)
+	- [DataOps (Operação de Dados)](#dataops-operação-de-dados)
+	- [Big Data x Small Data](#big-data-x-small-data)
+	- [Principais Ferramentas de  DATAOps](#principais-ferramentas-de--dataops)
+- [Dados como Serviço](#dados-como-serviço)
+	- [Data as Service (DaaS)](#data-as-service-daas)
+	- [Arquitetura DaaS](#arquitetura-daas)
+	- [Principais Benefícios de DaaS](#principais-benefícios-de-daas)
+	- [Arquiteturas Modernas de Big Data](#arquiteturas-modernas-de-big-data)
+	- [Data LakeHouse](#data-lakehouse)
+	- [Data Mesh](#data-mesh)
+	- [Data Mesh Como Paradigma de Arquitetura de Dados](#data-mesh-como-paradigma-de-arquitetura-de-dados)
+	- [Soluções Comerciais](#soluções-comerciais)
+- [ETL - Extração, Transformação e Carga de Dados](#etl---extração-transformação-e-carga-de-dados)
+	- [Definindo ETL](#definindo-etl)
+	- [ETL X ELT](#etl-x-elt)
+	- [Principais Soluções de ETL e ELT disponíveis no mercado](#principais-soluções-de-etl-e-elt-disponíveis-no-mercado)
+	- [Demo Etl e Big Data](#demo-etl-e-big-data)
+- [O que é Big Data Analytics?](#o-que-é-big-data-analytics)
+	- [Como as empresas estão utilizando o Big Data?](#como-as-empresas-estão-utilizando-o-big-data)
+	- [Casos de uso de Big Data Analytics](#casos-de-uso-de-big-data-analytics)
+- [Como iniciar um projeto em Big Data?](#como-iniciar-um-projeto-em-big-data)
+	- [Definição de Business Case](#definição-de-business-case)
+	- [Planejamento do Projeto](#planejamento-do-projeto)
+	- [Definição dos Requesitos Técnicos](#definição-dos-requesitos-técnicos)
+	- [Criação de um “Total Business Value Assessment”](#criação-de-um-total-business-value-assessment)
 
 </details>
 
-## BIG DATA
+## Big Data
 
 - Neste exato momento, 2.5 quintilhões de bytes são gerados por dia para nortear indivíduos, empresas e governos, e está dobrando a cada dois anos.
 
@@ -40,9 +87,9 @@
 
 - O big data nos dá uma visão clara do que é granular, não temos de nos fixar na causalidade, Podemos descobrir padrões e correlações nos dados que nos propiciem novas e valiosas ideias
 
-## Sistemas de armazenamento de dados:
+## Sistemas de armazenamento de dados
 
-### Os 4Vs do Big Data: 
+### Os 4Vs do Big Data 
 
 ![4Vs Big Data](img/1_4vs.png)
 
@@ -84,13 +131,13 @@
 
 - Além disso, estima-se que 3.1 trilhões de dólares por ano sejam desperdiçados devido a problemas de qualidade dos dados.
 
-### BIG DATA x CIÊNCIA DE DADOS
+### Big Data x Ciência De Dados
 
 - Big Data é a matéria-prima, ou seja, dados.
 - Ciência de dados é um conjunto de técnicas para análise de dados.
 - Quando aplicamos ciência de dados ao big data extraímos valor e então temos o que é chamado de Big Data Anaytics.
 
-### EXEMPLOS DE APLICAÇÃO DO BIG DATA ANALYTICS
+### Exemplos De Aplicação Do Big Data Analytics
 
 - Uma companhia Aérea pode extrair, armazenar, processar e analisar dados de viagens dos passageiros a fim de oferecer rotas com maior probabilidade de venda.
 
@@ -122,7 +169,7 @@
 
 ----------
 
-## O V DE VOLUME EM BIG DATA
+## O V De volume em Big Data
 
 - O V de volume é crítico em Big Data
 - Como vamos armazenar grandes conjuntos de dados?
@@ -134,23 +181,23 @@
 - Os dados não são estruturados ou Não podem ser estruturados antes do armazenamento?
 	_Usamos um Data Lake ou um Data Store_
 
-### BANCOS DE DADOS RELACIONAIS X NOSQL
+## Bancos De Dados Relacionais X NoSQL
 
-### RELACIONAL
+### Relacional
 
 - Banco de dados relacionais são estruturados e com schema (organização dos dados) bem definido
 - O schema é definido e criado antes do armazenamento dos dados
 - Um data ware house, por exemplo é criado com alguma tecnologia de bando relacional como SGBD( sistema gerenciado de banco de dados) oracle, IBM DB2, Microsoft SQL Server, MySQL, PostgreSQL e muitos outros
 - Em um banco de dados relacional os dados são organizados em tabelas que se relacionam
 
-### NOSQL
+### NoSql
 
 - Bancos de dados Não relacionais (noSQL) partem do princípio que os dados podem ser semi ou não estruturados e que outros tipos de relacionamentos podem existir entre os dados
 - Podemos usar bancos de dados NoSQL para construir data lakes e data stores (eles são conceitos)
 - Normalmente não precisamos definir o schema antes do armazenamento ou o schema é definido no momento do armazenamento dos dados
 - Existem diversos tipos de bancos de dados NoSQL : Key-Value, Graph Db (grafo), column family e Document
 
-### DATA WAREHOUSES (DW)
+### Data Warehouse (DW)
 
 - Um Data Warehouse é um sistema de armazenamento que conecta e harmoniza grandes quantidades de dados de muitas fontes diferentes
 - O objetivo do DW é alimentar a inteligência de negócios (Business Intelligence), relatórios e análises e oferecer suporte aos requisitos de negócio, para que as empresas possam transformar seus dados em insights e tomar decisões inteligentes baseadas em dados
@@ -177,7 +224,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 
 ![DataWarehouse](img/2_Dw.png)
 
-### BENEFÍCIOS DO DW
+### Benefícios do Data Warehouse
 
 - Melhor análise de negócios: com o DW, os tomadores de decisão tem acesso a dados de várias fontes e não precisam mais tomar decisões com base em informações incompletas. 
 
@@ -189,7 +236,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 
 - Visão histórica: ao armazenas dados históricos ricos, um data ware house permite que os tomadores de decisão aprendam com tendências e desafios passados, façam previsões e conduzam a melhoria contínua dos negócios.
 
-### DATA LAKES
+### Data Lakes
 
 ![DataLake](img/2_DataLake.png)
 
@@ -228,7 +275,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 
 - Sem necessidade de movimentação dos dados: análises podem ser executadas sem necessidade de mover os dados para um sistema de análise separado
 
-### DEFININDO DATA STORES
+### Definindo Data Stores
 
 - Um data store é um repositório para armazenar e gerenciar de forma persistente coleções de dados que incluem não apenas dados estruturados, mas também tipos de armazenamento variado , como documentos, dados no formato de chave-valor, filas de mensagens e outros formatos de arquivo
 
@@ -249,7 +296,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 
 - Custo total menor: por se tratar de um tipo simplificado de armazenamento o custo total tende a ser menor que a outra solução de armazenamento
 
-### SISTEMAS HÍBRIDOS DE ARMAZENAMENTO
+### Sistemas Híbridos de Armazenamento
 
 - Com o avanço do Big data veremos cada vez mais sistemas híbridos de armazenamento, com dados armazenados em diferentes tipos de repositórios, local ou na nuvem.
 
@@ -258,7 +305,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 ----------
 ## Armazenamento e Processamento Paralelo
 
-### O QUE É UM CLUSTER DE COMPUTADORES?
+### O que é um Cluster de Computadores?
 
 - Um servidor é um computador geralmente com alta capacidade computacional, que serve ( fornece) serviços de armazenamento, aplicações ou banco de dados
 
@@ -278,7 +325,7 @@ __“Exemplo nosql para data warehouse, uma empresa quer criar uma ia para detec
 
 ![Cluster](img/3_Cluster.png)
 
-### Software para armazenamento paralelo - APACHE HADOOP
+### Software para armazenamento paralelo - Apache Hadoop
 
 - Precisamos de um sistema de arquivos distribuido. Seu computador pessoal tem um sistema de arquivos ( NTFS, ext3, etc ) mas ele não foi desenvolvido para armazenamento distribuido
 
@@ -331,19 +378,31 @@ Na nuvem:
 - Databricks foi a mesma equipe que desenvolveu o SPARK para criar lakehouse plataform
 
 ----------
-## Cloud Computing:
+## Cloud Computing
 
-- A computação em nuvem é a entrega de serviços de computação incluindo servidores, armazenamento, bancos de dados, rede, software, análise e inteligência 
+- A computação em nuvem é a entrega de serviços de computação incluindo servidores, armazenamento, bancos de dados, rede, software, análise e inteligência.
 
-- a nuvem oferece recursos flexíveis, inovação e economia de escala
+- Pela Internet.
+
+- A nuvem oferece recursos flexíveis, inovação e economia de escala
 
 - Normalmente, pagamos apenas pelos serviços em nuvem que usamos, ajudando a reduzir os custos operacionais, operar a infraestrutura de forma mais eficiente e escalar conforme as necessidades de negócios mudam
 
+### Cloud Computing e Big Data
+
+### Principais Provedores em Nuvem
+
+- A aws foi a pioneira
+
+1. AWS
+2. Microsoft Azure
+3. Google Cloud
+
 ----------
 
-## MLOps e DataOps:
+## MLOps e DataOps
 
-### O QUE É MACHINE LEARNING?
+### O que é Machine Learning?
 
 - é uma sub-área da inteligência artificial ( IA ) e da ciência da computação que se concentra no uso de dados e algoritmos para imitar a forma como os humanos aprendem, melhorando gradativamente sua precisão
 
@@ -386,7 +445,7 @@ Na nuvem:
 
 ![DevOps](img/5_DevOps.png)
 
-### DataOps ( Operação de Dados )
+### DataOps (Operação de Dados)
 
 - é uma metodologia ágil e orientada a processos para desenvolver e entregar análises.
 
@@ -409,72 +468,80 @@ exclusivamente no ciclo de vida de desenvolvimento e implantação, e não no pr
 - Mas os Engenheiros DataOps apoiam o ciclo de fornecimento e utilização de dados
 definindo o processo e as tecnologias que outros usam para originar, transformar e utilizar dados. O Engenheiro DataOps tem um perfil mais amplo que o Engenheiro de Dados.
 
-### BIG DATA X SMALL DATA
+### Big Data x Small Data
 
 - Big data = grandes volumes de dados com muita variedade e gerados em alte velocidade
 
 - Small data = Dados que estão disponíveis em quantidade mínima para compreensão huma
  PRINCIPAIS FERRAMENTAS DE MLOps
 
-#### DVC 
+
+**DVC**
 
 https://dvc.org
 
 - DVC, ou Data Version Control, é um sistema de controle de versão de código aberto para projetos de aprendizado de máquina. É uma ferramenta de experimentação que ajuda a definir o pipeline, independentemente da linguagem usada.
 
-#### Pachyderm 
+
+**Pachyderm**
 
 https://www.pachyderm.com/
 
 - Pachyderm é uma plataforma que combina linhagem de dados com pipelines de ponta a ponta. Ele está disponível em três versões, Community Edition (código aberto, com capacidade de ser usado em qualquer lugar), Enterprise Edition (plataforma completa com versão controlada) e Hub Edition (ainda uma versão beta, combina características das duas versões anteriores).
 
-#### Airflow
+
+**Airflow**
 
 https://airflow.apache.org/
 
 - Airflow é uma plataforma de código aberto que permite monitorar, agendar e gerenciar osfluxos de trabalho usando app web. Ele fornece uma visão sobre o status das tarefas concluídas e em andamento, juntamente com uma visão dos logs.
 
-#### Neptune
+
+**Neptune**
 
 https://neptune.ai/product
 
 - O Neptune é um repositório de metadados desenvolvido para equipes de pesquisa e produção que realizam muitos experimentos. 
 
-#### MLflow 
+
+**MLflow**
 
 https://mlflow.org/
 
 - MLflow é uma plataforma de código aberto que ajuda a gerenciar todo o ciclo de vida do aprendizado de máquina que inclui experimentação, reprodutibilidade, implantação e um registro de modelo central. O MLflow é adequado para indivíduos e equipes de qualquer tamanho. A ferramenta é independente de biblioteca. Você pode usá-lo com qualquer biblioteca de aprendizado de máquina e em qualquer linguagem de programação.
 
-### PRINCIPAIS FERRAMENTAS DE DATAOps
+### Principais Ferramentas de  DATAOps
 
-#### DataKitchen
+
+**DataKitchen**
 https://datakitchen.io/
 
 - Uma das ferramentas DataOps mais populares, DataKitchen é a melhor para automatizar e coordenar pessoas, ambientes e ferramentas em análise de dados de toda a organização. O DataKitchen cuida de tudo - do teste à orquestração, ao desenvolvimento e à implantação. O DataKitchen permite que as organizações criem ambientes de trabalho em questão de minutos para que as equipes possam experimentar sem interromper os ciclos de produção. O pipeline de qualidade do DataKitchen é baseado em três seções principais; dados, produção e valor. É essencial entender que, com esta ferramenta, você pode acessar o pipeline com o código Python, transformá-lo via Linguagem SQL, projetar o modelo em R, visualizar na pasta de trabalho e obter relatórios no Tableau.
 
-#### Genie
+
+**Genie**
 
 https://netflix.github.io/genie/
 
 - Desenvolvida pela Netflix, essa ferramenta DataOps é um mecanismo de código aberto que oferece serviços de orquestração de trabalhos distribuídos. Essa ferramenta fornece APIs para desenvolvedores que desejam executar uma ampla variedade de trabalhos com Big Data, usando Hive, Hadoop, Presto e Spark. Genie também fornece APIs para gerenciamento de metadados em clusters de processamento distribuído.
-.
-#### Piper
+
+
+**Piper**
 
 https://www.piperr.io/
 
 - Piper é um pacote de ferramentas de DataOps baseadas em aprendizado de máquina que permite que as organizações leiam dados de maneira mais suave e eficiente. Esta solução expõe os dados por meio de um conjunto de APIs que se integram facilmente aos ativos digitais da organização. 
 
-#### Airflow
+**Airflow**
 
 https://airflow.apache.org/
 
 - Apache Airflow é uma plataforma de DataOps (e também MLOps) de código aberto que gerencia fluxos de trabalho complexos em qualquer organização, considerando os processos de dados como DAG (Directed Acyclic Graphs). Projetado pelo Airbnb para agendar e monitorar seus fluxos de trabalho, agora as empresas podem utilizar essa ferramenta de código aberto para gerenciar seu processo de dados no MacOS, Linux e Windows.
 
 ----------
-## Dados como Serviço:
+## Dados como Serviço
 
-### DATA AS SERVICE (DaaS)
+### Data as Service (DaaS)
 
 
 - DaaS é uma estratégia de gerenciamento de dados que visa alavancar os dados como um ativo de negócios para maior agilidade no processo de análise
@@ -485,7 +552,7 @@ https://airflow.apache.org/
 
 ![DaaS](img/6_DaaS.png)
 
-### ARQUITETURA DaaS
+### Arquitetura DaaS
 
 ![ArquiteturaDaaS](img/6_ArqDaaS.png)
 
@@ -495,7 +562,7 @@ https://airflow.apache.org/
 
 - Na verdade, uma arquitetura DaaS pode incluir uma variedade de tecnologias de gerenciamento de dados, incluindo virtualização de dados, serviços de dados, análise de autoatendimento (Self-Service Analytics) e catalogação de dados
 
-### PRINCIPAIS BENEFÍCIOS DE DaaS
+### Principais Benefícios de DaaS
 
 - Monetização de dados
 - Redução de Custos
@@ -589,7 +656,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 ----------
 
-## ETL - Extração, Transformação e Carga de Dados:
+## ETL - Extração, Transformação e Carga de Dados
 
 
 ### Definindo ETL
@@ -612,9 +679,9 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 - AWS ATHENA - motor de execução de linguagem SQL
 - PowerCenter
 
-### DEMO ETL e BIG DATA
+### Demo Etl e Big Data
 
-#### AWS GLUE
+**AWS GLUE**
 
 ![AWSGlue](img/7_AWSGlue.png)
 
@@ -624,26 +691,26 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 ----------
 
-## O QUE É BIG DATA ANALYTICS 
+## O que é Big Data Analytics? 
 
 - O valor do Big data é extraído quando se aplica uma técnica de análise de dados
 
-### COMO AS EMPRESAS ESTÃO UTILIZANDO O BIG DATA?
+### Como as empresas estão utilizando o Big Data?
 
 - Manufatura ( fábricas ) através de dados gerados por sensores e IoT
 - Finanças
 - Saúde - Prontuário eletrônico
 - Varejo
 
-### CASOS DE USO DE BIG DATA ANALYTCS
+### Casos de uso de Big Data Analytics
 
-#### Caesars Entertainment
+**Caesars Entertainment**
 
 - O novo ambiente reduziu o tempo de processamento de 6 horas para 45 minutos para posições-chave. Isso permitiu á caesars promover uma análise de dados mais rápida e exata, aprimorando a experiência de consumidor e fazendo com que a segurança atendesse os requisitos do setor de pagamentos com cartões
 
 - A empresa agora processa mais de 3 milhões de registros por hora
 
-#### Cerner
+**Cerner**
 
 - A empresa de tecnologia para o setor de saúde construiu um hub de dados corporativos no CDH (Cloudera distribution) para criar uma visão mais compreensível de qualquer paciente, condição ou tendência
 
@@ -651,7 +718,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 - Entre outras coisas, ela colabora na determinação mais exata da probabilidade de um paciente estar com infecção em sua corrente sanguínea
 
-#### eHarmony
+**eHarmony**
 
 - O site de namoro online recentemente atualizou seu ambiente na nuvem, usando o CDH para analisar um volume massivo e variado de dados
 
@@ -660,7 +727,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 - O novo ambiente cloud acomoda análises mais complexas, criando resultados mais personalizados e aumentando a chance de sucesso nos relacionamentos
 
 
-#### MasterCard
+**MasterCard**
 
 - A empresa foi a primeira a implementar a distribuição CDH do hadoop após receber certificação PCI completa
 
@@ -668,13 +735,13 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 - A masterCard incentiva seus clientes a adotarem o sistema através do seu braço de serviços profissionais o masterCard Advisors
 
-#### Farmlogs
+**Farmlogs**
 
 - A companhia de software para gerenciamento de produções agrícolas usa analytics em tempo real rodando nos processadores intel xeon E5 para fornecer dados sobre colheita, condições de plantio e estado da vegetação para 20% das fazendas americanas
 
 - A tecnologia ajuda os fazendeiros a aumentarem a produtividade de seus acres
 
-#### Nippon Paint
+**Nippon Paint**
 
 - Uma das maiores fornecedoras de tinta da ásia usa os processadores intel xeon E7 v2 para compreender o comportamento de clientes, otimizar sua cadeia de suprimentos e melhorar suas campanhas de marketing.
 
@@ -683,7 +750,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 ![EmpresasQueUsamHadoop](img/8_Hadoop.png)
 
 
-## COMO INICIAR UM PROJETO DE BIG DATA
+## Como iniciar um projeto em Big Data?
 
 1- Definição do Business Case.
 
@@ -694,7 +761,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 4- Criação de um total ‘Total Business Value Assessment’.
 
 
-### DEFINIÇÃO DE BUSINESS CASE
+### Definição de Business Case
 
 - definir um objetivo, escolher para onde vai, para decidir o melhor caminho. O que você quer alcançar ao final de um projeto?
   
@@ -703,7 +770,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 - deve ser apresentado aos tomadores de decisão e então com o business case em mãos partir para a parte de planejamento de projeto
 
 
-### PLANEJAMENTO DO PROJETO
+### Planejamento do Projeto
 
 - definição da documentação, escopo
 
@@ -721,7 +788,7 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 
 - definição de requisitos técnicos, para definir orçamento e cronograma
 
-### DEFINIÇÃO DOS REQUISITOS TÉCNICOS
+### Definição dos Requesitos Técnicos
 
 - criar arquitetura do projeto, definir aquilo que será necessário para implementar uma estrutura de big data
   
@@ -742,22 +809,10 @@ https://databricks.com/wp-content/uploads/2020/12/cidr_lakehouse.pdf
 - definir ferramentas de relatórios e visualização ( própria(R ou python) ou open source
 
 
-### CRIAÇÃO DE UM “TOTAL BUSINESS VALUE ASSESSMENT”
+### Criação de um “Total Business Value Assessment”
 
 - etapa que a empresa trabalha o time to business ( quanto tempo levará até gerar resultados), normalmente leva 3 anos para esse projeto gerar resultado
 - definir a facilidade de uso, escalabilidade, padrões ( ainda não existem um padrão técnico bem definido ), suporte e manutenção
-
-
-----------
-
-##
-
-
-
-----------
-
-##
-
 
 
 ----------

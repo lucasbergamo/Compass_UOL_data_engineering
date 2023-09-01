@@ -1,18 +1,44 @@
-# Sumário
+**Sumário**
 
 [Retornar](https://github.com/lucasbergamo/Compass_UOL_data_engineering)
 
 <details><summary><strong>Navegação</strong></summary>
 
-1. [Configurações](#configurações)
-2. [Comandos Básicos](#comandos-básicos)
-3. [Operadores](#operadores)
-4. [Funções agregadas + GROUP BY + HAVING](#funções-agregadas--group-by--having)
-5. [Join](#join)
-6. [Union](#union)
-7. [Subqueries](#subqueries)
-8. [Tratamento de dados](#tratamento-de-dados)
-9. [Manipulação de tabelas](#manipulação-de-tabelas)
+- [Configurações](#configurações)
+	- [pgAdmin](#pgadmin)
+	- [Configuração do Banco de dados](#configuração-do-banco-de-dados)
+	- [Criando estrutura no pgAdmin](#criando-estrutura-no-pgadmin)
+- [Comandos Básicos:](#comandos-básicos)
+	- [Comando SELECT](#comando-select)
+	- [Comando DISTINCT](#comando-distinct)
+	- [Comando WHERE](#comando-where)
+	- [Comando ORDER BY](#comando-order-by)
+	- [Comando LIMIT](#comando-limit)
+- [Operadores:](#operadores)
+	- [Operadores aritméticos](#operadores-aritméticos)
+	- [Operadores de Comparação](#operadores-de-comparação)
+	- [Operadores Lógicos](#operadores-lógicos)
+- [Funções agregadas + GROUP BY + HAVING](#funções-agregadas--group-by--having)
+	- [Funções Agregadas](#funções-agregadas)
+		- [Tipos de Funções Agregadas](#tipos-de-funções-agregadas)
+	- [GROUP BY](#group-by)
+	- [HAVING](#having)
+- [JOIN](#join)
+	- [Tipos de JOINS](#tipos-de-joins)
+- [Union](#union)
+	- [Comando UNION](#comando-union)
+- [Subqueries](#subqueries)
+	- [TIPOS DE SUBQUERY](#tipos-de-subquery)
+- [Tratamento de Dados](#tratamento-de-dados)
+	- [Tipos de Conversão](#tipos-de-conversão)
+	- [TRATAMENTO GERAL](#tratamento-geral)
+	- [TRATAMENTO DE TEXTO](#tratamento-de-texto)
+	- [TRATAMENTO DE DATAS](#tratamento-de-datas)
+	- [FUNÇÕES](#funções)
+- [Manipulação de Tabelas](#manipulação-de-tabelas)
+	- [Tabelas - Criação e Deleção](#tabelas---criação-e-deleção)
+	- [Linhas - Inserção, Atualização e Deleção](#linhas---inserção-atualização-e-deleção)
+	- [Colunas- Inserção, atualização e deleção](#colunas--inserção-atualização-e-deleção)
 
 </details>
 
@@ -73,7 +99,7 @@ select coluna_1, coluna_2, coluna_3
 from schema_1.tabela_1
 ```
 
-#### Exemplo 1 : seleção de uma coluna de uma tabela
+**Exemplo 1 : seleção de uma coluna de uma tabela**
 
 - liste os e-mails dos clientes da tabela sales.customers
 
@@ -84,7 +110,8 @@ from sales.customers
 
 - apos clicar para executar esse comando no query tools, ele vai fornecer todos os emails prontos para colocar em uma planilha excel
 
-#### Exemplo 2 : selecionar mais de uma coluna de uma tabela
+
+**Exemplo 2 : selecionar mais de uma coluna de uma tabela**
 
 - Liste os emails e nomes dos clientes da tabela sales.customers
 
@@ -93,7 +120,7 @@ select email, first_name, last_name
 from sales.customers
 ```
 
-#### Exemplo 3: Seleção de todas as colunas de uma tabela
+**Exemplo 3: Seleção de todas as colunas de uma tabela**
 
 - liste todas as informações dos clientes da tabela sales.customers
 
@@ -102,7 +129,7 @@ select *
 from sales.customers
 ```
 
-#### Resumo:
+**Resumo:**
 
 - Comando usado para selecionar colunas de tabelas ( select )
 - Quando selecionar mais de uma coluna, elas devem ser separadas por vírgula sem conter vírgula antes do comando FROM
@@ -118,7 +145,7 @@ select distinct coluna_1, coluna_2, coluna_3
 from schema_1.tabela_1
 ```
 
-#### Exemplo 1: Seleção de uma coluna sem Distinct
+**Exemplo 1: Seleção de uma coluna sem Distinct**
 
 - liste as marcas de carro que constam na tabela products
 
@@ -129,7 +156,7 @@ from sales.products
 
 retorna 333 resultados repetidos
 
-#### Exemplo 2: Seleção de uma coluna com Distinct
+**Exemplo 2: Seleção de uma coluna com Distinct**
 
 - liste as marcas de carro distintas que constam na tabela products
 
@@ -140,7 +167,7 @@ from sales.products
 
 retorna 40 resultados sem repetição
 
-#### Exemplo 3: Seleção de mais de uma coluna com distinct
+**Exemplo 3: Seleção de mais de uma coluna com distinct**
 
 - Liste as marcas e anos de modelo distintos que constam na tabela products
 
@@ -151,7 +178,7 @@ from sales.products
 
 encontrou todas as combinações distintas nessas 2 colunas
 
-#### Resumo:
+**Resumo:**
 
 - Comando Distinct é usado para remover linhas duplicadas e mostrar apenas linhas distintas.
 - Muito utilizado na etapa de exploração dos dados
@@ -174,7 +201,7 @@ simplificando:
 - de qual tabela iremos trazer
 - e qual a condição verdadeira para a linha aparecer na seleção
 
-#### Exemplo 1: filtro com condição única
+**Exemplo 1: filtro com condição única**
 
 - Liste os emails dos clientes da nossa base que moram no estado de santa catarina
 
@@ -199,7 +226,7 @@ from sales.customers
 where state = ‘SC’
 ```
 
-#### Exemplo 2 : Filtro com mais de uma condição
+**Exemplo 2 : Filtro com mais de uma condição**
 
 - Liste os emails dos clientes da nossa base que moram no estado de Santa Catarina ou Mato grosso do sul
 
@@ -209,7 +236,7 @@ from sales.customers
 where state = ‘SC’ or state = ‘MS’
 ```
 
-#### Exemplo 3 : Filtro de condição com data
+**Exemplo 3 : Filtro de condição com data**
 
 - liste os emails dos clientes da nossa base que moram no estado de santa catarina ou mato grosso do sul e que tem mais de 30 anos
 
@@ -233,7 +260,7 @@ from sales.customers
 where (state = ‘SC’ or state = ‘MS’) and birth_date < ‘19930628’
 ```
 
-#### Resumo: 
+**Resumo:**
 
 - Commando utilizado para filtrar linhas de acordo com uma condição
 - No PostgreSQL são utilizadas aspas simples para delimitar strings
@@ -245,7 +272,7 @@ where (state = ‘SC’ or state = ‘MS’) and birth_date < ‘19930628’
 
 - serve para ordenar a seleção de acordo com uma regra definida pelo usuário
 
-#### Exemplo 1: Ordenação de valores numéricos
+**Exemplo 1: Ordenação de valores numéricos**
 
 - liste produtos da tabela products na ordem crescente com base no preço : 
 
@@ -263,7 +290,7 @@ from sales.products
 order by price desc
 ```
 
-#### Exemplo 2: Ordenação de texto
+**Exemplo 2: Ordenação de texto**
 
 - Liste os estados distintos da tabela customers na ordem crescente
 
@@ -273,7 +300,7 @@ from sales.customers
 order by state
 ```
 
-#### Resumo:
+**Resumo:**
 
 - Comando utilizado para ordenar a seleção de acordo com uma regra definida
 - Por padrão o comando ordena na ordem crescente. Para mudar para decrescente devemos usar o Comando DESC
@@ -285,7 +312,7 @@ order by state
 - Muito utilizado na etapa de exploração de dados
 - limit N (numero de linha)
 
-#### Exemplo 1: Seleção das N primeiras linhas usando LIMIT
+**Exemplo 1: Seleção das N primeiras linhas usando LIMIT**
 
 - liste as 10 primeiras linhas da tabela funnel
 
@@ -295,7 +322,7 @@ from sales.funnel
 limit 10
 ```
 
-#### Exemplo 2:  Seleção das N primeiras linhas usando LIMIT e ORDER BY
+**Exemplo 2:  Seleção das N primeiras linhas usando LIMIT e ORDER BY**
 
 - liste os 10 produtos mais caros da tabela products
 
@@ -306,7 +333,7 @@ order by price desc
 limit 10
 ```
 
-#### Resumo:
+**Resumo:**
 
 - Comando utilizado para limitar o nº de linhas da consulta
 - Muito utilizado na etapa de exploração dos dados
@@ -321,7 +348,7 @@ limit 10
 - Servem para executar operações matemáticas
 - Muito utilizados para criar colunas calculadas
 
-#### Exemplo 1 ; Criação de coluna calculada
+**Exemplo 1: Criação de coluna calculada**
 
 - Crie uma coluna contendo a idade do cliente da tabela sales.customers
 
@@ -351,7 +378,7 @@ select
 from sales.customers
 ```
 
-#### Exemplo 2: Utilização da coluna calculada nas queries
+**Exemplo 2: Utilização da coluna calculada nas queries**
 
 - Liste os 10 clientes mais novos da tabela customers
 
@@ -364,7 +391,7 @@ from sales.customers
 order by “idade do cliente”
 ```
 
-#### Exemplo 3: Criação de coluna calculada com strings
+**Exemplo 3: Criação de coluna calculada com strings**
 
 - Crie a coluna “nome_completo” contendo o nome completo do cliente
 
@@ -400,7 +427,7 @@ from sales.customers
 - **ILIKE**: ignora se o campo tem letras maiúsculas ou minúsculas na comparação
 - **IS NULL**: verifica se o campo é nulo
 
-#### Exemplo 1: Selecione veículos que custem entre 100k e 200k na tabela products
+**Exemplo 1: Selecione veículos que custem entre 100k e 200k na tabela products**
 
 ```
 select *
@@ -416,7 +443,7 @@ from sales.products
 where price between 100000 and 200000
 ```
 
-#### Exemplo 2: Selecione veículos que custem abaixo de 100k ou acima de 200k
+**Exemplo 2: Selecione veículos que custem abaixo de 100k ou acima de 200k**
 
 ```
 select *
@@ -432,7 +459,7 @@ from sales.products
 where price not between 100000 and 200000
 ```
 
-#### Exemplo 3: Uso do comando IN
+**Exemplo 3: Uso do comando IN**
 
 - Selecionar produtos que sejam da marca HONDA, TOYOTA ou RENAULT
 
@@ -450,7 +477,7 @@ from sales.products
 where brand in (‘HONDA’, ‘TOYOTA’, ‘RENAULT’)
 ```
 
-#### Exemplo 4: Uso de comando LIKE (matchs imperfeitos)
+**Exemplo 4: Uso de comando LIKE (matchs imperfeitos)**
 
 – Selecione primeiros nomes distintos da tabela customers que começam com ANA
 
@@ -476,7 +503,7 @@ from sales.customers
 where first_name like ‘%ANA’
 ```
 
-#### Exemplo 5: Uso do comando ILIKE (ignora letras maiúsculas e minúsculas)
+**Exemplo 5: Uso do comando ILIKE (ignora letras maiúsculas e minúsculas)**
 
 – Selecione os primeiros nomes distintos com iniciais ‘ana’
 
@@ -486,7 +513,7 @@ from sales.customers
 where first_name like ‘ana%’
 ```
 
-#### Exemplo 6: Uso do comando IS NULL
+**Exemplo 6: Uso do comando IS NULL**
 
 - Selecionar apenas as linhas que contém nulo no campo “population” na tabela temp_tables.regions
 
@@ -510,7 +537,7 @@ where population is null
 - Na função COUNT() pode-se utilizar o asterisco (*) para contar os registros
 - COUNT(DISTINCT ) irá contar apenas os valores exclusivos
 
-### Tipos de Funções Agregadas
+#### Tipos de Funções Agregadas
 
 - **COUNT()**
 - **SUM()**
@@ -518,7 +545,7 @@ where population is null
 - **MAX()**
 - **AVG()**
 
-#### Exemplo1 : Contagem de todas as linhas de uma tabela
+**Exemplo1 : Contagem de todas as linhas de uma tabela**
   
 - Conte todas as visitas realizadas ao site da empresa fictícia
 
@@ -529,7 +556,7 @@ from sales.funnel
 
 - utilizar essa querry para fazer uma contagem de quantos dados têm e se necessário, utilizar o limit
 
-#### Exemplo 2: Contagem das linhas de uma coluna
+**Exemplo 2: Contagem das linhas de uma coluna**
 
 - Conte todos os pagamentos regstrados na tabela sales.funnel
 
@@ -546,7 +573,7 @@ from sales.funnel
 
 - essa segunda querry, conta quantos pagamentos foi feito, excluindo os NULL
 
-#### Exemplo 3: Contagem distinta de uma coluna
+**Exemplo 3: Contagem distinta de uma coluna**
 
 - Conte todos os produtos distintos visitados em jan/21
 
@@ -556,14 +583,14 @@ from sales.funnel
 where visit_page_date between ‘2021-01-01’ and ‘2021-01-31’
 ```
 
-#### Exemplo 4: Calcule o preço mínimo, máximo e médio dos productos da tabela products
+**Exemplo 4: Calcule o preço mínimo, máximo e médio dos productos da tabela products**
 
 ```
 select min(price), max(price), avg(price)
 from sales.products
 ```
 
-#### Exemplo 5: Informe qual é o veículo mais caro da tabela products
+**Exemplo 5: Informe qual é o veículo mais caro da tabela products**
 
 ```
 select max(price)
@@ -584,7 +611,7 @@ where price = (select max(price) from sales.products)
 - (ex: GROUP BY 1,2,3 irá agrupar as 3 primeiras colunas da tabela)
 - o GROUP BY sozinho funciona como um DISTINCT, eliminando linhas duplicadas
 
-#### Exemplo 1: Contagem agrupada de uma coluna
+**Exemplo 1: Contagem agrupada de uma coluna**
 
 - Calcule o nº de clientes da tabela customers por estado
 
@@ -595,7 +622,7 @@ group by state
 order by contagem desc
 ```
 
-#### Exemplo 2: Contagem agrupada de várias colunas
+**Exemplo 2: Contagem agrupada de várias colunas**
 
 - Calcule o nº de clientes por estado e status profissional
 
@@ -606,7 +633,7 @@ group by state, professional_status
 order by state, contagem desc
 ```
 
-#### Exemplo 3: Seleção de valores distintos
+**Exemplo 3: Seleção de valores distintos**
 
 - Selecione os estados distintos na tabela customers utilizando o group by
 
@@ -629,7 +656,7 @@ group by state
 - A função HAVING também pode filtrar colunas não agregadas
 - Tem a mesma função do WHERE mas pode ser usado para filtrar os resultados das funções agregadas enquanto o WHERE possui essa limitação
 
-#### Exemplo 1: Seleção com filtro no HAVING
+**Exemplo 1: Seleção com filtro no HAVING**
 
 - Calcule o nº de clientes por estado filtrando apenas estados acima de 100 clientes
 
@@ -650,7 +677,7 @@ group by state
 
 ![Tipos de Join](img/5_join.png)
 
-#### Exemplo 1: Utilize o LEFT JOIN para fazer join entre as tabelas
+**Exemplo 1: Utilize o LEFT JOIN para fazer join entre as tabelas**
 
 - temp_tables.tabela_1 e temp_tables.tabela_2
 
@@ -669,7 +696,7 @@ on t1.cpf = t2.cpf
 
 ![inner join](img/5_innerjoin.png)
 
-#### Exemplo 3: Utilize o RIGHT JOIN para fazer join entre as tabelas
+**Exemplo 3: Utilize o RIGHT JOIN para fazer join entre as tabelas**
 
 - temp_tables.tabela_1 e temp_tables.tabela_2
 
@@ -683,7 +710,7 @@ on t1.cpf = t2.cpf
 ![right join](img/5_rightjoin.png)
 
 
-#### Exemplo 4: Utilize o FULL JOIN para fazer join entre as tabelas
+**Exemplo 4: Utilize o FULL JOIN para fazer join entre as tabelas**
 
 - temp_tables.tabela_1 e temp_tables.tabela_2
 
@@ -697,7 +724,7 @@ on t1.cpf = t2.cpf
 ![full join](img/5_fullJoin.png)
 
 
-#### Exemplo 1: Identifique qual é o status profissional mais frequente nos clientes que compraram automóveis em nosso site
+**Exemplo 1: Identifique qual é o status profissional mais frequente nos clientes que compraram automóveis em nosso site**
 
 ```
 select  cus.professional_status,
@@ -710,7 +737,7 @@ order by pagamentos desc
 ```
 
 
-#### Exemplo 2: Identifique qual é o gênero mais frequente nos clientes que compraram automóveis no site. 
+**Exemplo 2: Identifique qual é o gênero mais frequente nos clientes que compraram automóveis no site.**
 
 - utilizar a tabela temp_tabela.ibge_genders
 
@@ -726,7 +753,7 @@ on lower(cus.first_name) = ibge.first_name
 group by ibge.gender
 ```
 
-#### Exemplo 3: Identifique de quais regiões são os clientes que mais visitam o site
+**Exemplo 3: Identifique de quais regiões são os clientes que mais visitam o site**
 
 - utilizar a tabela temp_tables.regions
 
@@ -753,7 +780,7 @@ order by visitar desc
 
 ![union](img/6_Union.png)
 
-#### Exemplo 1: união simples de duas tabelas
+**Exemplo 1: união simples de duas tabelas**
 
 - Una a tabela sales.products com a tabela temp_tables.products_2
 
@@ -778,7 +805,7 @@ Tipos
 - Subquery no FROM
 - Subquery no SELECT
 
-#### Exemplo 1 : Subquery no WHERE
+**Exemplo 1 : Subquery no WHERE**
 
 - Informe qual é o veiculo mais barato da tabela produtcs
 
@@ -800,7 +827,7 @@ where price = (select min(price) from sales.products)
 select min(price) from sales.products
 ```
 
-#### Exemplo 2 : Subquery no WITH
+**Exemplo 2 : Subquery no WITH**
 
 - Calcule a idade média dos cientes por status profissional
 
@@ -833,7 +860,7 @@ from alguma_tabela
 group by professional_status
 ```
 
-#### Exemplo 3: Subquery no FROM
+**Exemplo 3: Subquery no FROM**
 
 - Calcule a média de idades dos clientes por status profissional
 
@@ -850,7 +877,7 @@ from (
 group by professional_status
 ```
 
-#### Exemplo 4: Subquery no SELECT
+**Exemplo 4: Subquery no SELECT**
 
 - Na tabela sales.funnel crie uma coluna que informe o nº de visitas acumuladas  que a loja visitada recebeu até o momento
 
@@ -871,7 +898,7 @@ left join sales.stores as sto
 order by sto.store_name, fun.visit_page_date
 ```
 
-#### Resumo 
+**Resumo:**
 
 (1) Servem para consultar dados de outras consultas.
 
@@ -890,12 +917,12 @@ order by sto.store_name, fun.visit_page_date
 - Operador  : :
 - CAST
 
-#### Resumo
+**Resumo:**
 
 - O operador :: e o CAST() são funções utilizadas para converter um dado para a unidade desejada
 - O operador :: é mais “Clean”, porém, em algumas ocasiões não funciona, sendo necessário utilizar a função CAST()
 
-#### Exemplo 1 : Conversão de texto em data
+**Exemplo 1 : Conversão de texto em data**
 
 - Corrija a query abaixo utilizando o operador : : 
 
@@ -910,7 +937,7 @@ select nome_coluna::date
 from nome_tabela
 ```
 
-#### Exemplo 2: Conversão de texto em número
+**Exemplo 2: Conversão de texto em número**
 
 - Corrija a query abaixo utilizando o operador :: 
 
@@ -920,7 +947,7 @@ select ‘100’ - ‘10’
 select ‘100’::numeric - ‘10’::numeric
 ```
 
-#### Exemplo 3: Conversão de número em texto
+**Exemplo 3: Conversão de número em texto**
 
 - Corrija a query abaixo utilizando o operador ::
 
@@ -930,7 +957,7 @@ select replace(112122, ‘1’, ‘A’)
 select replace(112122::text, ‘1’, ‘A’)
 ```
 
-#### Exemplo 4: Conversão de texto em data
+**Exemplo 4: Conversão de texto em data**
 
 - Corrija a query abaixo utilizando a função CAST
 
@@ -940,7 +967,7 @@ select cast(‘2021-10-01’ as date) - cast(‘2021-02-01’ as date)
 
 ### TRATAMENTO GERAL
 
-#### Exemplo 1: Agrupamento de dados com CASE WHEN
+**Exemplo 1: Agrupamento de dados com CASE WHEN**
 
 - Calcule o n° de clientes que ganham abaixo de 5k, entre 5k e 10k, entre 10k e 15k e acima de 15k
 
@@ -962,7 +989,7 @@ from faixa_de_renda
 group by faixa_renda
 ```
 
-#### Exemplo 2: Tratamento de dados nulos com COALESCE
+**Exemplo 2: Tratamento de dados nulos com COALESCE**
 
 - Crie uma coluna chamada populacao_ajustada na tabela temp_tables.regions e preencha com os dados da coluna population, mas caso esse campo estiver nulo, preencha com a população média (geral) das cidades do Brasil
 
@@ -988,13 +1015,13 @@ select
 from temp_tables.regions
 ```
 
-#### Resumo
+**Resumo:**
 
 - CASE WHEN é o comando utilizado para criar respostas específicas para diferentes condições e é muito utilizado para fazer agrupamento de dados
 
 - COALESCE é o comando utilizado para preeencher campos nulos com o primeiro valor não nulo de uma sequência de valores
 
-#### TRATAMENTO DE TEXTO
+### TRATAMENTO DE TEXTO
 
 TIPOS : 
 
@@ -1003,7 +1030,8 @@ TIPOS :
 - **TRIM()**
 - **REPLACE()**
 
-#### Exemplo 1: Corrija o primeiro elemento das queries abaixo utilizando os comandos de tratamento de texto para que o resultado seja sempre TRUE
+
+**Exemplo 1: Corrija o primeiro elemento das queries abaixo utilizando os comandos de tratamento de texto para que o resultado seja sempre TRUE**
 
 ```
 select upper(‘São Paulo’) = ‘SÃO PAULO’
@@ -1017,7 +1045,7 @@ select replace(‘SAO PAULO’, ‘SAO’, ‘SÃO’) = ‘SÃO PAULO)
 
 - sintaxe do replace = 1º a palavra, 2º a palavra que deseja substituir, 3º a nova que deseja
 
-#### Resumo
+**Resumo:**
 
 - UPPER() é utilizado para transformar todo texto em letras maiúsculas
 - LOWER() é utilizado para transformar todo texto em letras minúsculas
@@ -1031,7 +1059,7 @@ select replace(‘SAO PAULO’, ‘SAO’, ‘SÃO’) = ‘SÃO PAULO)
 - **EXTRACT**
 - **DATEDIFF**
 
-#### Exemplo 1: Soma de datas utilizando INTERVAL
+**Exemplo 1: Soma de datas utilizando INTERVAL**
 
 - Calcule a data de hoje mais 10 unidades (dias, semanas, meses, horas)
 
@@ -1047,7 +1075,7 @@ select (current_date + interval ‘10 months’)::date
 select (current_date + interval ‘10 hours’)
 ```
 
-#### Exemplo 2: Truncagem de datas utilizando DATE_TRUNC
+**Exemplo 2: Truncagem de datas utilizando DATE_TRUNC**
 
 - Calcule quantas visitas ocorreram por mês no site da empresa
 
@@ -1065,7 +1093,7 @@ group by visit_page_month
 order by visit_page_month desc
 ```
 
-#### Exemplo 3: Extração de unidades de uma data utilizando EXTRACT
+**Exemplo 3: Extração de unidades de uma data utilizando EXTRACT**
 
 - Calcule qual é o dia da semana que mais recebe visitas ao site
 
@@ -1082,7 +1110,7 @@ group by dia_da_semana
 order by dia_da_semana
 ```
 
-#### Exemplo 4: Diferença entre datas com o operador de subtração (-)
+**Exemplo 4: Diferença entre datas com o operador de subtração (-)**
 
 - Calcule a diferença entre hoje e ‘2018-06-01’, em dias, semanas, meses e anos.
 
@@ -1102,7 +1130,7 @@ ou
 select datediff(‘weeks’, ‘2018-06-01’, current_date)
 ```
 
-Resumo
+**Resumo:**
 
 - O comando INTERVAL é utilizado para somar datas na unidade desejada. Caso a unidade não seja informada, o SQL irá entender que a soma foi feita em dias.
 - O comando DATE_TRUNC é utilizado para truncar uma data no início do período
@@ -1113,7 +1141,7 @@ Resumo
 
 - Servem para criar comandos personalizados de scripts usados recorrentemente.
 
-#### Exemplo 1: Crie uma função chamada DATEDIFF para calcular a diferença entre duas datas em dias, semanas, meses, anos
+**Exemplo 1: Crie uma função chamada DATEDIFF para calcular a diferença entre duas datas em dias, semanas, meses, anos.**
 
 ```
 select datediff(‘weeks’, ‘2018-06-01’, current_date)
@@ -1138,13 +1166,13 @@ $$
 select datediff(‘day’, ‘2021-02-04’, current_date)
 ```
 
-#### Exemplo 2: Delete a função DATEDIFF criada no exercício anterior
+**Exemplo 2: Delete a função DATEDIFF criada no exercício anterior**
 
 ```
 drop function datediff
 ```
 
-#### Resumo
+**Resumo:**
 
 - Para criar funções, utiliza-se o comando CREATE FUNCTION
 - Para que o comando funcione é obrigatório informar (a) quais as unidades dos INPUTS (b) quais as unidades dos OUTPUTS e © em qual linguagem a função será escrita
@@ -1159,13 +1187,13 @@ drop function datediff
 ### Tabelas - Criação e Deleção
 
 
-#### Resumo
+**Resumo:**
 
 - Para criar tabelas a partir de uma query basta escrever a query normalmente e colocar o comando INTO antes do FROM informando o schema e o nome da tabela a ser criada
 - Para criar tabelas a partir do zero é necessário criar uma tabela vazia com o comando CREATE TABLE , informar que valores serão inseridos com o comando INSERT INTO seguido do nome das colunas, Inserir os valores manualmente em forma de lista após o comando VALUES
 - Para deletar uma tabela utiliza-se o comando DROP TABLE
 
-#### Exemplo 1: Criação de tabela a partir de uma query
+**Exemplo 1: Criação de tabela a partir de uma query**
 
 - crie uma tabela chamada customers_age com o id e a idade dos clientes, chame-a de temp_tables.customers_age
 
@@ -1180,7 +1208,7 @@ select *
 from temp_tables.customers_age
 ```
 
-#### Exemplo 2: Criação de tabela a partir do zero
+**Exemplo 2: Criação de tabela a partir do zero**
 
 - crie uma tabela com a tradução dos status profissionais dos clientes
 chame-a de temp_tables.profissoes 
@@ -1210,7 +1238,7 @@ values
 select * from temp_tables.profissoes
 ```
 
-#### Exemplo 3: Deleção de tabelas
+**Exemplo 3: Deleção de tabelas**
 
 - delete a tabela temp_tables.profissoes
 
@@ -1220,13 +1248,14 @@ drop table temp_tables.profissoes
 
 ### Linhas - Inserção, Atualização e Deleção
 
-#### Resumo
+**Resumo:**
 
 - Para inserir linhas em uma tabela é necessário informar que valores serão inseridos com o comando INSERT INTO seguido do nome da tabela e nome das colunas, inserir os valores manualmente em forma de lista após o comando VALUES
 - Para atualizar as linhas de uma tabela é necessário informar qual tabela será atualizada com o comando UPDATE, informar qual o novo valor com o comando SET, delimitar qual linha será modificada utilizando o filtro WHERE
 - Para deletar linhas de uma tabela é necessário informar de qual tabela as linhas serão deletadas com o comando DELETE FROM, delimitar qual linha será deletada utilizando o filtro WHERE
 
-#### Exemplo 1: Inserção de linhas
+
+**Exemplo 1: Inserção de linhas**
 
 - Insira os status ‘desempregado’ e ‘estagiário’ na temp_table.profissoes
 
@@ -1241,7 +1270,7 @@ values
 (‘trainee’, ‘estagiário’)
 ```
 
-#### Exemplo 2: Atualizações de linhas
+**Exemplo 2: Atualizações de linhas**
 
 - corrija a tradução de ‘estagiário’ de ‘trainee’ para ‘intern’
 
@@ -1251,7 +1280,7 @@ set professional_status = ‘intern’
 where status_professional = ‘estagiário’
 ```
 
-#### Exemplo 3: Deleção de linhas
+**Exemplo 3: Deleção de linhas**
 
 - Delete as linhas dos status ‘desempregado’ e ‘estagiário’
 
@@ -1263,7 +1292,8 @@ or status_profissional = ‘estagiário’
 
 ### Colunas- Inserção, atualização e deleção
 
-#### Resumo
+
+**Resumo:**
 
 - Para fazer qualquer modificação nas colunas de uma tabela utiliza-se o comando ALTER TABLE seguido do nome da tabela
 - Para adicionar colunas utiliza-se o comando ADD seguido do nome da coluna e da unidade da nova coluna
@@ -1271,7 +1301,8 @@ or status_profissional = ‘estagiário’
 - Para renomear uma coluna utiliza-se o comando RENAME COLUMN
 - Para deletar uma coluna utiliza-se o comando DROP COLUMN
 
-#### Exemplo 1: Inserção de colunas
+
+**Exemplo 1: Inserção de colunas**
 
 - Insira uma coluna na tabela sales.customers com a idade do cliente
 
@@ -1286,7 +1317,7 @@ set customer_age = datediff(‘years’, birth_date, current_date)
 where true
 ```
 
-#### Exemplo 2: Alteração do tipo de uma coluna
+**Exemplo 2: Alteração do tipo de uma coluna**
 
 - Altere o tipo da coluna customer_age de inteiro para varchar
 
@@ -1297,7 +1328,7 @@ alter column customer_age type varchar
 select * from sales.customers
 ```
 
-#### Exemplo 3: Alteração do nome da coluna
+**Exemplo 3: Alteração do nome da coluna**
 
 - Renomeie o nome da coluna ‘customer_age’ para ‘age’
 
@@ -1306,7 +1337,7 @@ alter table sales.customers
 rename column customer_age to age
 ```
 
-#### Exemplo 4: Deleção de coluna
+**Exemplo 4: Deleção de coluna**
 
 - Delete a coluna age
 

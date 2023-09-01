@@ -84,7 +84,7 @@
   - [Classe tarefa](#classe-tarefa)
   - [Desafio POO](#desafio-poo)
 - [Gerenciamento de Pacotes](#gerenciamento-de-pacotes)
-- [Isolamento de  ambientes](#isolamento-de--ambientes)
+- [Isolamento de ambientes](#isolamento-de-ambientes)
 
 </details>
 
@@ -1402,7 +1402,7 @@ objeto3 = 1, 6, 1999
 
 [Classe tarefa](./cursoPython/poo/todo_v1.py)
 [Classe Projeto](./cursoPython/poo/todo_v2.py)
-[Método __iter__](./cursoPython/poo/todo_v3.py)
+[Método __ iter__](./cursoPython/poo/todo_v3.py)
 [Implementação do Vencimento](./cursoPython/poo/todo_v4.py)
 [Herança](./cursoPython/poo/todo_v5.py)
 [Métodos Privados](./cursoPython/poo/todo_v6.py)
@@ -1420,6 +1420,6 @@ objeto3 = 1, 6, 1999
 
 [Ex1](./cursoPython/)
 
-## Isolamento de  ambientes
+## Isolamento de ambientes
 
 [Ex1](./cursoPython/)
