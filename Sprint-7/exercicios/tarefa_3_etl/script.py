@@ -8,8 +8,8 @@ movies_files = 'movies.csv'
 series_dir = f'Raw/Local/CSV/Series/{data}/series.csv'
 movies_dir = f'Raw/Local/CSV/Movies/{data}/movies.csv'
 
-aws_access_key = 'AKIARO2LDX4V7UUYYN6C'
-aws_secret_key = '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'
+aws_access_key = 'ops'
+aws_secret_key = 'ops'
 region = 'us-east-1' 
 nome_bucket = 'desafio-etl-1-lucas-uol'
 
