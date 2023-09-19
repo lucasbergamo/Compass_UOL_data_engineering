@@ -1,0 +1,49 @@
+{
+	"jobConfig": {
+		"name": "job_aws_glue_lab_4",
+		"description": "",
+		"role": "arn:aws:iam::100552392491:role/AWSGlueServiceRole-Lab4",
+		"command": "glueetl",
+		"version": "4.0",
+		"runtime": null,
+		"workerType": "G.1X",
+		"numberOfWorkers": 2,
+		"maxCapacity": 2,
+		"maxRetries": 0,
+		"timeout": 5,
+		"maxConcurrentRuns": 1,
+		"security": "none",
+		"scriptName": "job_aws_glue_lab_4_etl_names.py",
+		"scriptLocation": "s3://aws-glue-assets-100552392491-us-east-1/scripts/",
+		"language": "python-3",
+		"jobParameters": [
+			{
+				"key": "--S3_INPUT_PATH",
+				"value": "s3://lab-glue-berg/nomes.csv",
+				"existing": false
+			},
+			{
+				"key": "--S3_TARGET_PATH",
+				"value": "s3://lab-glue-berg/frequencia_registro_nomes_eua/",
+				"existing": false
+			}
+		],
+		"tags": [],
+		"jobMode": "DEVELOPER_MODE",
+		"createdOn": "2023-09-18T12:40:42.611Z",
+		"developerMode": true,
+		"connectionsList": [],
+		"temporaryDirectory": "s3://aws-glue-assets-100552392491-us-east-1/temporary/",
+		"logging": true,
+		"glueHiveMetastore": true,
+		"etlAutoTuning": false,
+		"metrics": true,
+		"bookmark": "job-bookmark-disable",
+		"sparkPath": "s3://aws-glue-assets-100552392491-us-east-1/sparkHistoryLogs/",
+		"flexExecution": false,
+		"minFlexWorkers": null,
+		"pythonPath": null
+	},
+	"hasBeenSaved": false,
+	"script": "import sys\r\nfrom awsglue.transforms import *\r\nfrom awsglue.utils import getResolvedOptions\r\nfrom pyspark.context import SparkContext\r\nfrom awsglue.context import GlueContext\r\nfrom awsglue.job import Job\r\nfrom awsglue.dynamicframe import DynamicFrame\r\nfrom pyspark.sql.functions import upper\r\nfrom pyspark.sql.types import IntegerType\r\n\r\n## @params: [JOB_NAME]\r\nargs = getResolvedOptions(sys.argv, ['JOB_NAME','S3_INPUT_PATH','S3_TARGET_PATH'])\r\nsc = SparkContext()\r\nglueContext = GlueContext(sc)\r\nspark = glueContext.spark_session\r\njob = Job(glueContext)\r\njob.init(args['JOB_NAME'], args)\r\nsource_file = args['S3_INPUT_PATH']\r\ntarget_path = args['S3_TARGET_PATH']\r\ndf = glueContext.create_dynamic_frame.from_options(\r\n\"s3\",\r\n{\r\n\"paths\": [source_file]\r\n},\r\n\"csv\",\r\n{\"withHeader\": True, \"separator\":\",\"},\r\n)\r\n\r\ndf.printSchema()\r\n\r\nspark_df = df.toDF()\r\n\r\nspark_df = spark_df.withColumnRenamed(\"nome\", \"NOME\")\r\n\r\nspark_df = spark_df.withColumn(\"ano\", spark_df[\"ano\"].cast(IntegerType()))\r\nspark_df = spark_df.withColumn(\"total\", spark_df[\"total\"].cast(IntegerType()))\r\nspark_df.printSchema()\r\n\r\nprint(spark_df.count())\r\n\r\nspark_df = df.toDF()\r\nspark_df.select(\"NOME\", \"ano\", \"sexo\").groupBy(\"ano\", \"sexo\").count().orderBy(spark_df.ano.desc()).show()\r\n\r\nspark_df.select(\"NOME\", \"ano\", \"total\").filter(spark_df.sexo == \"F\").orderBy(spark_df.total.desc()).limit(1).show()\r\n\r\nspark_df.select(\"NOME\", \"ano\", \"total\").filter(spark_df.sexo == \"M\").orderBy(spark_df.total.desc()).limit(1).show()\r\n\r\nspark_df.groupBy(\"ano\", \"sexo\").count().orderBy(spark_df.ano).limit(10).show()\r\n\r\nspark_df = spark_df.withColumn(\"NOME\", upper(spark_df[\"NOME\"]))\r\n\r\nspark_df.write.option(\"header\",True) \\\r\n        .partitionBy(\"sexo\", \"ano\") \\\r\n        .mode(\"overwrite\") \\\r\n        .json(target_path)\r\n\r\njob.commit()"
+}

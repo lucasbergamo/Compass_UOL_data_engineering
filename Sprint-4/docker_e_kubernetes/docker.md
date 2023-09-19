@@ -118,8 +118,9 @@
 - [Docker Download](https://www.docker.com/products/docker-desktop/)
   - Habilitar Hyper-v
 
-- [WSL2](https://learn.microsoft.com/pt-br/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
-  - O Docker exige o Wsl 2 no windows
+- [WSL](https://learn.microsoft.com/pt-br/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
+- [WSL2](https://learn.microsoft.com/pt-br/windows/wsl/install)
+- O Docker exige o Wsl 2 no windows
 
 após instalar o docker -> reiniciar -> instalar o wsl -> abrir o docker;
 
@@ -229,7 +230,7 @@ Passo a passo:
 - Verificamos **containers em background com docker ps** também;
 - Podemos utilizar o __nginx ( servidor web, identico ao apache )__ para este exemplo!
 - Inicia um container em background: ```docker run -d nginx```
-- parando um container utilizando o dado em NAMES```docker stop charming_fermi```
+- parando um container utilizando o dado em NAMES```docker stop charming_fermi``` 
 
 ### Expondo portas de container
 
@@ -336,7 +337,7 @@ docker rm -f nginx_app
   
   4 - criamos o ```app.js```, arquivo principal da nossa aplicação
 
-  5 - ==[app.js](./1_imagens_e_containers/app.js)==
+  5 - ![app.js](./1_imagens_e_containers/app.js)==
   
   ```
   const express = require('express')
@@ -355,7 +356,7 @@ docker rm -f nginx_app
 
 7 - criar arquivo Dockerfile ( nosso arquivo da imagem )
 
-8 - ==[Dockerfile](./1_imagens_e_containers/Dockerfile)==
+8 - ![Dockerfile](./1_imagens_e_containers/Dockerfile)
 ```
 FROM node
 # puxar uma imagem de base para aplicação: node

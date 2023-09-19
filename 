@@ -1,0 +1,61 @@
+[33m3ac9c89[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33mc091fd8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: reset: moving to HEAD~1
+[33m72140a4[m HEAD@{2}: reset: moving to HEAD~1
+[33m7f739ff[m HEAD@{3}: reset: moving to HEAD~1
+[33mbc2a489[m HEAD@{4}: reset: moving to HEAD~1
+[33mec64234[m HEAD@{5}: reset: moving to HEAD~1
+[33m68e658e[m HEAD@{6}: commit: test2
+[33mec64234[m HEAD@{7}: commit: test
+[33mbc2a489[m HEAD@{8}: commit: gitingore
+[33m7f739ff[m HEAD@{9}: commit: resolvendo_bug_persistente
+[33m72140a4[m HEAD@{10}: reset: moving to HEAD
+[33m72140a4[m HEAD@{11}: reset: moving to HEAD~
+[33m6e1455f[m HEAD@{12}: commit: resetando_stage
+[33m72140a4[m HEAD@{13}: reset: moving to HEAD~
+[33mc43bbf7[m HEAD@{14}: reset: moving to HEAD~
+[33m76a45e9[m HEAD@{15}: commit: resolvendo_bug
+[33mc43bbf7[m HEAD@{16}: reset: moving to HEAD
+[33mc43bbf7[m HEAD@{17}: reset: moving to HEAD
+[33mc43bbf7[m HEAD@{18}: reset: moving to HEAD
+[33mc43bbf7[m HEAD@{19}: reset: moving to HEAD
+[33mc43bbf7[m HEAD@{20}: commit: sprint-7
+[33m72140a4[m HEAD@{21}: commit: sprint-7
+[33mc091fd8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{22}: commit: sprint6
+[33m3ac9c89[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{23}: commit: ageis
+[33m8b68a88[m HEAD@{24}: pull: Merge made by the 'ort' strategy.
+[33m906e9fb[m HEAD@{25}: commit: ageis
+[33me384081[m HEAD@{26}: commit: sprint4
+[33me22efb6[m HEAD@{27}: commit: docker
+[33m92c1b9b[m HEAD@{28}: commit: docker
+[33me7e5015[m HEAD@{29}: commit: testando
+[33md001c4a[m HEAD@{30}: commit: sprint4
+[33mf4cc552[m HEAD@{31}: pull: Merge made by the 'ort' strategy.
+[33mdf86ad1[m HEAD@{32}: commit: sprint4
+[33m7634362[m HEAD@{33}: pull: Merge made by the 'ort' strategy.
+[33m8ef6bd7[m HEAD@{34}: commit: python provisorio
+[33m9bffc20[m HEAD@{35}: commit: sprint3
+[33m1ce9ca6[m HEAD@{36}: pull: Merge made by the 'ort' strategy.
+[33mecdeff6[m HEAD@{37}: commit: limpeza
+[33me0b2cf6[m HEAD@{38}: commit: removendo 3 do big data
+[33m0d1254a[m HEAD@{39}: commit: finalizando alterações base
+[33mc49f4e7[m HEAD@{40}: pull: Fast-forward
+[33m907142b[m HEAD@{41}: commit: alteração nas pastas e finalização sql
+[33me82be5b[m HEAD@{42}: pull: Fast-forward
+[33mf4e66f3[m HEAD@{43}: commit: refatorando big data
+[33m55faf12[m HEAD@{44}: commit: bigData_Finalizado
+[33mbfb2a02[m HEAD@{45}: commit: netade do conteúdo de big data adicionado
+[33m9b9765a[m HEAD@{46}: commit: sessão linux, sprint 1 finalizada
+[33m1da8aac[m HEAD@{47}: pull: Fast-forward
+[33m1ff1987[m HEAD@{48}: commit: retirando ponto do nome dos arquivos
+[33m4e2d42a[m HEAD@{49}: commit: Refatorando readme e finalizando formatação de git e github
+[33ma79c227[m HEAD@{50}: commit: apagando arquivos indesejados
+[33m7d29890[m HEAD@{51}: commit: exercicios_loja
+[33m649fec4[m HEAD@{52}: commit: certificado de pdf para jpg
+[33mec67a32[m HEAD@{53}: commit: sprint-2
+[33mb294065[m HEAD@{54}: pull: Merge made by the 'ort' strategy.
+[33mdc5725c[m HEAD@{55}: commit: livros e videos
+[33m1ec840c[m HEAD@{56}: commit: aws_path_pdf
+[33mf2f174f[m HEAD@{57}: pull: Fast-forward
+[33m83a93e8[m HEAD@{58}: pull: Fast-forward
+[33me713762[m HEAD@{59}: commit: Adicionando certificados, readme.md, sprints
+[33m6dfa531[m HEAD@{60}: clone: from https://github.com/lucasbergamo/Compass.UOL_data_engineering.git
