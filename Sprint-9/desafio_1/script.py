@@ -18,10 +18,10 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# entrada (JSON)
+# entrada JSON
 source_path = "s3://desafio-final-compass-uol/Raw/Tmdb/JSON/2023/10/18/todos_filmes_drama_romance_tmdb.json"
 
-# saída (Parquet)
+# saída parquet
 nome_arquivo = "todos_filmes_drama_romance_tmdb.parquet"
 current_date = datetime.now().strftime("%Y/%m/%d")
 target_path = f"s3://desafio-final-compass-uol/Trusted/Tmdb/PARQUET/{current_date}/{nome_arquivo}"

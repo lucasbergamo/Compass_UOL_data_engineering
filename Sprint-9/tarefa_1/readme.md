@@ -2,7 +2,7 @@
 - e serviu exatamente para rodar o arquivo da tarefa
 - vizualizei o diagrama para entender sua modelagem de dados
 - atributo simples ou composto, monovalorados, multivalorados ou derivados(idade vem de data de nascimento)
-- utilziar a chave cpf, para identificar de forma única uma entidade, valores associados a esse atributo são distintos pois só pode haver 1 cpf por pessoa.
+- utilizar a chave cpf, para identificar de forma única uma entidade, valores associados a esse atributo são distintos pois só pode haver 1 cpf por pessoa.
 - existe relacionamento entre entidades? qual seria essa cardialidade?
 - para iniciar podemos começar com um modelo conceitual, usando alta abstração
 - utilizaremos qual diagrama? entidade e relacionamento ou diagrama de classes?
