@@ -44,10 +44,7 @@ pagina_atual = 1
 
 nome_arquivo = "filmes_drama_romance.json"
 
-
 with open(nome_arquivo, "w", encoding="utf-8") as arquivo_json:
     json.dump(todos_filmes, arquivo_json, ensure_ascii=False, indent=4)
 
-
-# Agora todos_filmes contém todos os filmes com gêneros Drama e Romance
 print(f"Total de filmes encontrados: {len(todos_filmes)}")
