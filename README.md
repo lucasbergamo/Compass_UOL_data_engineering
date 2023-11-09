@@ -296,7 +296,7 @@ Utilizei o OBS studio para gravar minha apresentação.
 
 
 - [**Quicksight**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_10/quicksight)
-- [**Consumo e Apresentação dos dados - Desafio Final**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/desafio.md)
+- [**Consumo e Apresentação dos dados - Desafio Final**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/readme.md)
 - [**Dashboard**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/dashboard_quicksight.png)
 
 
