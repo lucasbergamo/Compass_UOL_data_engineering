@@ -14,16 +14,16 @@
 
 <details> <summary><strong>Sprints</strong></summary>
 
-- [x] [**Sprint #1**](#sprint-1)
-- [x] [**Sprint #2**](#sprint-2)
-- [x] [**Sprint #3**](#sprint-3)
-- [x] [**Sprint #4**](#sprint-4)
-- [ ] [**Sprint #5**]()
-- [ ] [**Sprint #6**]()
-- [ ] [**Sprint #7**]()
-- [ ] [**Sprint #8**]()
-- [ ] [**Sprint #9**]()
-- [ ] [**Sprint #10**]()
+- [x] [**Sprint #1**](#sprint-01)
+- [x] [**Sprint #2**](#sprint-02)
+- [x] [**Sprint #3**](#sprint-03)
+- [x] [**Sprint #4**](#sprint-04)
+- [X] [**Sprint #5**](#sprint-05)
+- [X] [**Sprint #6**](#sprint-06)
+- [X] [**Sprint #7**](#sprint-07)
+- [X] [**Sprint #8**](#sprint-08)
+- [X] [**Sprint #9**](#sprint-09)
+- [X] [**Sprint #10**](#sprint-10)
 
 </details>
 
@@ -31,9 +31,9 @@
 
 ## **Sobre mim:**
   
-Sou um recifence orgulhoso e bairrista, nascido em REC/PE. Gosto de consertar hardware,aprender sobre novas tecnologias, praticar esportes e tomar um bom café.
+Sempre disposto a aprender, nascido em Recife/PE. Gosto de cozinhar, aprender novas tecnologias, praticar esportes e tomar um bom café.
 
-Desde sempre fui fascinado por tecnologia, meu tio era dono de uma LanHouse e cresci com meus primos nesse ambiente de jogos e computador.
+Desde cedo sou fascinado por tecnologia, meu tio era dono de uma Lan House e cresci com meus primos nesse ambiente de jogos e computador.
 
 Em janeiro de 2023 decidi me dedicar integralmente para conquistar minha primeira vaga na área de tecnologia, o caminho é difícil mas não irei desistir.
 
@@ -44,18 +44,40 @@ Antes de surgir a oportunidade de trainee na compass.uol, na área de engenharia
 
 ## **Aprendizados:**
 
-Tenho buscado referências na carreira de engenheiro de dados(Jerry Strazzeri), livros (Modelagem de dados - josé Osvaldo de Sordi) e gostaria de comprar (Spark: The Definitive Guide: Big Data Processing Made Simple) e certificações (AWS Practitioner) 
+Tenho buscado referências na carreira de engenheiro de dados: (Luan Moreno), (Jerry Strazzeri), livros (Modelagem de dados - josé Osvaldo de Sordi) e gostaria de comprar (Spark: The Definitive Guide: Big Data Processing Made Simple).
 
-Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o mais marcante foi o de AWS na Dio que mostrou esse ecossistema maravilhoso, além de proporcionar um voucher para a realização da Certificação AWS Cloud Practitioner.
+Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o de AWS na Dio que mostrou esse ecossistema, além de proporcionar um voucher para a realização da Certificação AWS Cloud Practitioner.
 
-Recentemente finalizei uma imersão com foco em DevOps e multicloud, onde aprendi sobre softwares que são extremamente requisitados no mercado de trabalho como: ansible, terraform, kubernetes e docker, além da integração de servidores cloud.
+Recentemente finalizei uma imersão com foco em DevOps e multicloud, onde aprendi sobre tecnologias que são extremamente requisitados: ansible, terraform, kubernetes e docker, além da integração de servidores cloud.
 
-Descobri que ao criar o arquivo markdown seguindo ordem de Título #, ##, ###, ####
-é possível utilizar a extensão markdown-all-in-one para criar automaticamente o sumário
-- ctrl + shift + p 
-- markdown all in one: Create table of content (toc)
 
-Atalhos VsCode
+
+
+
+
+
+## **Objetivos:**
+
+- Cursar uma graduação em ciências da computação após finalizar o tecnólogo em ADS;
+- Desenvolver fluência em inglês;
+- Me desenvolver na área de Engenharia de Dados;
+- Produzir conteúdo educativo para transformar a vida das pessoas através da tecnologia;
+
+
+## Sprint 01
+
+Adquiri conhecimentos em git / github, principalmente configuração e comandos mais utilizados no dia a dia, sempre documentando meu aprendizado.
+
+No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos comandos mais utilizados que aprendi no curso.
+
+Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
+
+- Descobri que ao criar o arquivo markdown seguindo ordem de Título #, ##, ###, ####. é possível utilizar a extensão markdown-all-in-one para criar automaticamente o sumário
+
+1. ctrl + shift + p 
+2. markdown all in one: Create table of content (toc)
+
+- Atalhos VsCode:
 
 - Duplicar Linha = Shift + Alt + Seta
 - Mover Linha = Alt + Seta
@@ -65,22 +87,8 @@ Atalhos VsCode
 - Zen Mode = Ctrl + K Z
 - IntelliSense = Ctrl + Espaço
 
-## **Objetivos:**
-
-- Cursar uma graduação em ciências da computação;
-- Desenvolver fluência em inglês
-
-
-## Sprint #1
-
-Adquiri conhecimentos em git / github, principalmente configuração e comandos mais utilizados no dia a dia, sempre documentando meu aprendizado.
-
-No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos comandos mais utilizados que aprendi no curso.
-
-Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
-
-- [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/GitGithub/gitGithub.md)
-- [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/LinuxParaDesenvolvedores/Linux.md)
+* [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/GitGithub/gitGithub.md)
+* [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/LinuxParaDesenvolvedores/Linux.md)
 
 <details><summary>Certificados</summary>
   
@@ -89,9 +97,11 @@ Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor
 
 </details>
 
-## Sprint #2
+## Sprint 02
 
-Adquiri conhecimentos em SQL, de comandos básicos até tratamento de dados e manipulação de tabelas, utilizando SGBD. Realizei os exercícios bem desafiadores e sei da extrema importância de sempre me manter atualizado e estudando SQL.
+Adquiri conhecimentos em SQL, de comandos básicos até tratamento de dados e manipulação de tabelas, utilizando SGBD. 
+
+Realizei os exercícios bem desafiadores e sei da extrema importância de sempre me manter atualizado e estudando SQL.
 
 Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de armazenamento e processamento de dados, MLOPs e DataOps. Além de entender conceitos de ETL e ELT, DaaS e como iniciar projetos em big data.
 
@@ -105,7 +115,7 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 </details>
 
-## Sprint #3
+## Sprint 03
 
 
 - [**Python 3 - Curso Completo do Básico ao Avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-3/python3.md)
@@ -113,7 +123,7 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 <details><summary>Certificados</summary>
   
-- []()
+- [Python3](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/python_provisorio.png)
 
 </details>
 
