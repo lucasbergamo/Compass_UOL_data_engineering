@@ -7,7 +7,7 @@
 - [Primeira Etapa - Sprint 7](#primeira-etapa---sprint-7)
   - [Implementar código Python:](#implementar-código-python)
   - [Dockerfile](#dockerfile)
-  - [SCRIPT PYTHON](#script-python)
+  - [Script de ETL Python](#script-de-etl-python)
 - [Segunda Etapa - Sprint 8](#segunda-etapa---sprint-8)
 - [Terceira Etapa - Sprint 9](#terceira-etapa---sprint-9)
   - [Job glue ETL](#job-glue-etl)
@@ -15,6 +15,7 @@
   - [Processamento Refined Usando Glue](#processamento-refined-usando-glue)
   - [Querrys no aws athena](#querrys-no-aws-athena)
 - [Etapa Final - Sprint 10](#etapa-final---sprint-10)
+  - [Modelagem do desafio final](#modelagem-do-desafio-final)
   - [Pré processamento local](#pré-processamento-local)
 - [Problema encontrado, startwith x col.filter](#problema-encontrado-startwith-x-colfilter)
   - [Dashboard](#dashboard)
@@ -28,7 +29,7 @@
 
 
 
-## Implementar código Python:
+## Implementar código Python
 
 - ler os 2 arquivos (filmes e series) no formato CSV inteiros, ou seja, sem filtrar os dados
 
@@ -61,7 +62,7 @@ COPY . /app
 CMD ["python", "script.py"]
 ```
  
-## SCRIPT PYTHON
+## Script de ETL Python
 
  ```
 import boto3
@@ -456,7 +457,15 @@ FROM trusted
 # Etapa Final - Sprint 10
 
 - Criar Views e Abrir no Quicksight
+- Modelagem do desafio final
 
+## Modelagem do desafio final
+
+![Schema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/2_schema.jpeg)
+
+![Modelagem Multidimensional](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/1_dimensao.jpeg)
+
+![Querys](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/3_querrs.jpeg)
 
 ## Pré processamento local
 
