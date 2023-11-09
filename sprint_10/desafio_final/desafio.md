@@ -28,6 +28,8 @@
 # Primeira Etapa - Sprint 7
 
 
+![Etapa 1](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/1_desafio_final.png)
+
 
 ## Implementar código Python
 
@@ -99,6 +101,7 @@ print(f"{series_files} e {movies_files}, foram transferidos com sucesso para o b
 
 # Segunda Etapa - Sprint 8
 
+![Etapa 2](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/2_desafio_final.png)
 
 - Ingestão Batch através de uma requisição a API do TMDB, salvando o resultado no S3 Usando lambda.
 - Dados salvos na camada RAW do Bucket do desafio-final
@@ -295,6 +298,7 @@ def lambda_handler(event, context):
 
 # Terceira Etapa - Sprint 9
 
+![Etapa 3](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/3_desafio_final.png)
 
 - Criar um Job no Glue usando Pyspark para processar os arquivos JSON na raw, transformar e exportar como parquet para a Trusted
 
@@ -360,12 +364,12 @@ Passo a Passo:
 6. resolvi deixar o fato_filmes apenas com as chaves estrangeiras e criar uma dim_locacao com os detalhes de valores e horarios da locacao
 
 
-![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/concessionariaDimensionalStarSchema.png)
+![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_2/concessionariaDimensionalStarSchema.png)
 
 
 - Após criar as Views
 
-![views](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/view_concessionaria.png)
+![views](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_2/view_concessionaria.png)
 
 
 ## Processamento Refined Usando Glue
@@ -519,9 +523,9 @@ print(f"O DataFrame tem {contagem_de_dados} linhas (dados).")
 ## Dashboard
 
 
-[Fimes Martin Scorsese](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/quicksight.pdf)
+[Fimes Martin Scorsese](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/quicksight.pdf)
 
-![Dashboard PNG](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/dashboard_quicksight.png)
+![Dashboard PNG](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/dashboard_quicksight.png)
 
 
 
