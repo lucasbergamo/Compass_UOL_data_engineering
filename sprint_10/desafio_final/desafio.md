@@ -92,7 +92,7 @@ s3.upload_file(series_files, nome_bucket, movies_dir)
 print(f"{series_files} e {movies_files}, foram transferidos com sucesso para o bucket: {nome_bucket}, no Amazon S3.")
 ```
 
-![Ingestão de dados no S3](./1_upload_ok.png)
+![Ingestão de dados no S3](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/1_upload_ok.png)
 
 
 
@@ -105,19 +105,19 @@ print(f"{series_files} e {movies_files}, foram transferidos com sucesso para o b
 1. Criar um Secrets manager para salvar minha chave da API como parâmetro
 
 
-![Secrets manager](./2_secrets_manager.png)
+![Secrets manager](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/2_secrets_manager.png)
 
 
 2. Adicionar as Roles necessárias
 
 
-![Roles Aws](./3_roles_permission.png)
+![Roles Aws](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/3_roles_permission.png)
 
 
 3.  Criar nova Layer (Request) no AWS Lambda necessárias à ingestão de dados, Boto3 ja é nativo.
 
 
-![Layer AWS](./1_requests_layer.png)
+![Layer AWS](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/1_requests_layer.png)
 
 
 
@@ -281,14 +281,14 @@ def lambda_handler(event, context):
 
 ```
 
-![Código Lambda Executado](./3_run_lambda.png)
+![Código Lambda Executado](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/3_run_lambda.png)
 
 - Tive problemas ao usar o ident=4 no json, melhora a visualização mas bugou ao consultar, pelo menos ao usar o ident=4 consegui visualizar os generos de drama e romance para solicitar apenas eles
 
 
 4. Requisição feita a api do tmbd, usando lambda para salvar o request como json num bucket s3 para posterior análise
 
-![Ingestão Batch no S3 Usando lambda](./4_s3_ok.png)
+![Ingestão Batch no S3 Usando lambda](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/4_s3_ok.png)
 
 
 
@@ -359,12 +359,12 @@ Passo a Passo:
 6. resolvi deixar o fato_filmes apenas com as chaves estrangeiras e criar uma dim_locacao com os detalhes de valores e horarios da locacao
 
 
-![starSchema](./concessionariaDimensionalStarSchema.png)
+![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/concessionariaDimensionalStarSchema.png)
 
 
 - Após criar as Views
 
-![views](./view_concessionaria.png)
+![views](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/view_concessionaria.png)
 
 
 ## Processamento Refined Usando Glue
@@ -450,7 +450,7 @@ SELECT
 FROM trusted
 ```
 
-![Athena Tables and Views](./img/athena_tables.png)
+![Athena Tables and Views](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/athena_tables.png)
 
 
 # Etapa Final - Sprint 10
@@ -471,15 +471,16 @@ FROM trusted
 
 2. pré-processamento local
 
-- [Jupyter Notebook 1](./desafio_final.ipynb)
+- [Jupyter Notebook 1](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/desafio_final.ipynb)
 
-- [Jupyter Notebook 2](./desafio_final_2.ipynb)
+- [Jupyter Notebook 2](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/desafio_final_2.ipynb)
 
 
 # Problema encontrado, startwith x col.filter
 
 4. filtrando com startswith, ele retornará registros que contenham "actor" ou "actress" seguidos de outros caracteres. Isso resulta em mais registros, pois é mais abrangente.
 
+```
 nomes_df = nomes_df.filter(
     (nomes_df["primaryProfession"].startswith("ator")) |
     (nomes_df["primaryProfession"].startswith("atriz"))
@@ -488,10 +489,11 @@ nomes_df = nomes_df.filter(
 atores_principais.show(10)
 contagem_de_dados = atores_principais.count()
 print(f"O DataFrame tem {contagem_de_dados} linhas (dados).")
-
+```
 
 - Ele não considerará registros que tenham caracteres adicionais após "actor" ou "actress", apenas aqueles que correspondem exatamente a essas palavras. Isso resulta em menos registros, pois é mais restritivo.
 
+```
 from pyspark.sql.functions import col
 
 atores = names.filter((col("profissao") == "actor") | (col("profissao") == "actress"))
@@ -499,6 +501,7 @@ atores = names.filter((col("profissao") == "actor") | (col("profissao") == "actr
 atores_principais.show(10)
 contagem_de_dados = atores_principais.count()
 print(f"O DataFrame tem {contagem_de_dados} linhas (dados).")
+```
 
 5. remover as opções "delimiter" e "header", pois essas opções são específicas para arquivos CSV e não são relevantes para arquivos Parquet.
 
@@ -507,9 +510,9 @@ print(f"O DataFrame tem {contagem_de_dados} linhas (dados).")
 ## Dashboard
 
 
-[Fimes Martin Scorsese](./quicksight.pdf)
+[Fimes Martin Scorsese](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/quicksight.pdf)
 
-![Dashboard PNG](./dashboard_quicksight.png)
+![Dashboard PNG](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/dashboard_quicksight.png)
 
 
 
