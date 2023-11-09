@@ -364,12 +364,8 @@ Passo a Passo:
 6. resolvi deixar o fato_filmes apenas com as chaves estrangeiras e criar uma dim_locacao com os detalhes de valores e horarios da locacao
 
 
-![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_2/concessionariaDimensionalStarSchema.png)
+![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/modelo%20de%20dados.jpg)
 
-
-- Após criar as Views
-
-![views](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_2/view_concessionaria.png)
 
 
 ## Processamento Refined Usando Glue
