@@ -52,7 +52,7 @@ Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o de
 Recentemente finalizei uma imersão com foco em DevOps e multicloud, onde aprendi sobre tecnologias que são extremamente requisitados: ansible, terraform, kubernetes e docker, além da integração de servidores cloud.
 
 
-## **Objetivos:**
+## Objetivos :
 
 - Cursar graduação de ciências da computação após finalizar o tecnólogo em ADS;
 - Desenvolver fluência em inglês;
@@ -75,8 +75,8 @@ Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor
 
 <details><summary>Certificados</summary>
   
-- [Git e Github](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/gitGithub.jpg)
-- [Linux](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/linux.jpg)
+- [**Git e Github**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/gitGithub.jpg)
+- [**Linux**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/linux.jpg)
 
 </details>
 
@@ -93,8 +93,8 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 <details><summary>Certificados</summary>
   
-- [SQL para Análise de Dados: Do básico ao avançado](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificadoSql.jpg)
-- [Big Data Fundamentos 3.0](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificateBigDataFundamentos.jpg)
+- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificadoSql.jpg)
+- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificateBigDataFundamentos.jpg)
 
 </details>
 
@@ -107,7 +107,7 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 <details><summary>Certificados</summary>
   
-- [Python3](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/python_provisorio.png)
+- [**Python3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/python_provisorio.png)
 
 </details>
 
@@ -158,6 +158,10 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 
 - [**Data Analytics Fundamentals**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/data_analytics_fundamentals.md)
+
+
+### Exercícios
+
 - [**Lab Athena**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_athena/lab_athena.md)
 - [**Lab Lambda**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_lambda/lab_lambda.md)
 - [**Lab S3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_s3/lab_s3.md)
@@ -183,63 +187,73 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 ## Sprint 07
 
-- [****]()
-- [****]()
+- [**Preparação Certificação AWS Practitioner**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/aws_practitioner/resumo.md)
+- [**Hadoop**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/hadoop/hadoop_mapreduce.md)
+- [**Spark**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/spark/spark.md)
+
+
+### Exercícios
+
+- [**Lab_Glue**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_07/exercicios/lab_glue)
+- [**Python com Pandas e Numpy**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_07/exercicios/tarefa_1)
+- [**Apache Spark - Contador de Palavras**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_07/exercicios/tarefa_2)
+- [**Desafio-ETL Parte 1**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_07/exercicios/tarefa_3_etl)
 
 
 <details><summary>Certificados</summary>
   
-- [****]()
-- [****]()
-- [****]()
-- [****]()
+- [**Hadoop**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/1_hadoop.png)
+- [**Spark**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/2_spark.png)
 
 </details>
 
 ## Sprint 08
 
-- [****]()
-- [****]()
 
 
-<details><summary>Certificados</summary>
-  
-- [****]()
-- [****]()
-- [****]()
-- [****]()
+### Exercícios
 
-</details>
+- [**Extração de dados TMDB com Container - Desafio parte 2**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_08/exercicio_1/readme.md)
+- [**Extração de dados TMDB com Lambda - Desafio parte 2**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_08/exercicio_2)
+- [**Geração de dados em massa**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_08/exercicio_3)
+- [**Manipular DF com Apache Spark**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_08/exercicio_4)
+
 
 ## Sprint 09
 
-- [****]()
-- [****]()
+- [**Modelagem de Dados**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/modelagem.md)
+
+### Exercícios
 
 
-<details><summary>Certificados</summary>
+- [**Modelagem Relacional Normalização**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_1/readme.md)
+- [**Modelagem Dimensional**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/tarefa_2/readme_2.md)
+
   
-- [****]()
-- [****]()
-- [****]()
-- [****]()
-
-</details>
+- [**Processamento Trusted - Desafio parte 3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_09/desafio_1)
+- [**Modelagem de dados Refined - Desafio parte 3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_09/desafio_2)
+- [**Processamento da Refined - Desafio parte 3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_09/desafio_3)
+  
 
 ## Sprint 10
 
-- [****]()
-- [****]()
+
+- [**Quicksight**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_10/quicksight)
+- [**Consumo e Apresentação dos dados - Desafio Final**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/desafio.md)
+- [**Dashboard**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/dashboard_quicksight.png)
 
 
 <details><summary>Certificados</summary>
-  
-- [****]()
-- [****]()
-- [****]()
-- [****]()
+
+- [**Sprint 10**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/certificado_sprint_10.jpg)
+- [**Aws Quicksight**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/quicksight_certificado.jpg)
+- [**Aws Cloud Practitioner**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/aws_practitioner.pdf)
+
 
 </details>
+
+
+[índice](#Stacks)
 
 <h2 align='center'> 
   Versionamento e Comunicação
