@@ -136,6 +136,8 @@ Como obter amostras com Python.
 
 Como representar com Python gráficos de barras, histogramas, linhas, setores.
 
+Criar e subir containers de Docker, Criar imagens de Docker, Desenvolvimento de Volumes no Docker, Kubernetes, Orquestração de containers, YAML do básico ao avançado.
+
 
 
 - [**Estatística Descritiva com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_04/estatistica_descritiva_python/estatistica.md)
@@ -214,9 +216,12 @@ Realizei laboratórios práticos envolvendo querys no athena, scripts no lambda 
 
 Estudei para certificação AWS, fiz a prova e consegui a Aprovação.
 
-Aprendi a Instalar e utilizar o Hadoop, conceitos de HDFS, Yarn.
+Aprendi a Instalar e utilizar o Hadoop, desenvolver Aplicações MapReduce para processar BigData, conceitos de HDFS, MapReduce e Yarn.
 
 Aprendi a utilziar o Pyspark localmente para manipar arquivos como Data Frames, além de conceitos como particionamento.
+
+Arquitetura e Detalhes do Spark, Criação de DataFrames, SparkSQL Criar tabelas e consulta utilizando SQL, Criar Aplicações Spark.
+
 
 
 - [**Preparação Certificação AWS Practitioner**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/aws_practitioner/resumo.md)
