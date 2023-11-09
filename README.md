@@ -105,7 +105,15 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 ## Sprint 03
 
+aprendi a criar programas em Python.
 
+Uso de Python como linguagem para criação de scripts.
+
+Programação orientada a objetos.
+
+Programação funcional em Python.
+
+A ser um Desenvolvedor Completo em Python.
 
 - [**Python 3 - Curso Completo do Básico ao Avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_03/python.md)
 
@@ -117,6 +125,16 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 </details>
 
 ## Sprint 04
+
+Aprendi a importância da estatística para Data Science.
+
+A importância da aleatoriedade.
+
+Diferenciar dados populacionais de dados amostrais.
+
+Como obter amostras com Python.
+
+Como representar com Python gráficos de barras, histogramas, linhas, setores.
 
 
 
@@ -142,7 +160,7 @@ Começamos a aprender sobre a nuvem aws, através do AWS skill builder, com vide
 
 Introdução ao conceito de nuvem, precificação, custo-beneficio, aspectos econômicos da nuvem;
 
-Um conteúo mais voltado para conhecer a aws, e da precificação dos seus serviços
+Um conteúo mais voltado para conhecer a aws, e da precificação dos seus serviços.
 
 - [**Conceito de Nuvem**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/aws.md)
 - [**Tecnologias Essenciais AWS**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/aws2.md)
@@ -160,7 +178,9 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 ## Sprint 06
 
+Sprint Voltada para todo ecossistema AWS, tive uma noção dos serviços que utilizaremos e me preparou para a certificação AWS.
 
+Realizei laboratórios práticos envolvendo querys no athena, scripts no lambda utilizando layers e posteriormente a criação de um lake house utilizando o S3.
 
 - [**Data Analytics Fundamentals**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/data_analytics_fundamentals.md)
 
@@ -192,6 +212,13 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 ## Sprint 07
 
+Estudei para certificação AWS, fiz a prova e consegui a Aprovação.
+
+Aprendi a Instalar e utilizar o Hadoop, conceitos de HDFS, Yarn.
+
+Aprendi a utilziar o Pyspark localmente para manipar arquivos como Data Frames, além de conceitos como particionamento.
+
+
 - [**Preparação Certificação AWS Practitioner**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/aws_practitioner/resumo.md)
 - [**Hadoop**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/hadoop/hadoop_mapreduce.md)
 - [**Spark**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_07/spark/spark.md)
@@ -214,6 +241,9 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 ## Sprint 08
 
+Realizei exercicios utilizando script python, utilizei Pyspark, Jupyter Notbooks.
+
+Realizei processos de extração de dados de uma API.
 
 
 ### Exercícios
@@ -225,6 +255,11 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
 
 
 ## Sprint 09
+
+Aprendi conceitos de modelagem de dados conceitual, lógica e multidimensional.
+
+Além de realizar processos de ETL para refinar meus dados através das camadas Raw, Trusted e Refined.
+
 
 - [**Modelagem de Dados**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_09/modelagem.md)
 
@@ -241,6 +276,18 @@ Um conteúo mais voltado para conhecer a aws, e da precificação dos seus servi
   
 
 ## Sprint 10
+
+Utilizei todo o aprendizado que desenvolvi durante o programa, desde criação de scripts para requisição de dados de uma API, transformação dos dados e exportação para um bucket s3, que veio a se tornar um Lake House.
+
+Também desenvolvi código lambda para realizar processos de ingestão no contexto da nuvem.
+
+Jobs no Glue para ETL, criando um database target e utilizando o crawler nos repositórios com arquivo parquet para disponibilizar as tabelas no Athena.
+
+Utilizei o Athena para querys SQL e criação de views para utilizar no Quicksight.
+
+Criei um Dashboard no Quicksight referente ao tema Drama com foco no direto Martin Scorsese.
+
+Utilizei o OBS studio para gravar minha apresentação.
 
 
 - [**Quicksight**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/tree/main/sprint_10/quicksight)
