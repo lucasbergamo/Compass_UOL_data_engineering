@@ -2,15 +2,20 @@
   <strong>Olá, me chamo Lucas 👋😃</strong>
 </h1>
 
+
 <h3 align='center'> 
 
   :man_technologist: <strong>Estagiário em Engenharia de dados na Compass.Uol</strong>
 </h3>
 
+
+
 <h3 align='center'> 
 
-  :mortar_board: <strong>Estou no 3º semestre da faculdade de Análise e Desenvolvimento de Sistemas na UNINABUCO</strong>
+  :mortar_board: <strong>Cursando o último semestre de Análise e Desenvolvimento de Sistemas na UNINABUCO</strong>
 </h3>
+
+
 
 <details> <summary><strong>Sprints</strong></summary>
 
