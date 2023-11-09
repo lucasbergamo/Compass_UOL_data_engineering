@@ -39,6 +39,7 @@ Em janeiro de 2023 decidi me dedicar integralmente para conquistar minha primeir
 
 Antes de surgir a oportunidade de trainee na compass.uol, na área de engenharia de dados, estava tentando uma carreira na área de front end. Após o feedback positivo e confirmação do estágio, me dediquei para entender a profissão de engenheiro, analista e cientista de dados.
 
+
 ## Stacks
 
 
@@ -51,14 +52,9 @@ Realizei diversos bootcamps que agregaram muitos conhecimentos importantes, o de
 Recentemente finalizei uma imersão com foco em DevOps e multicloud, onde aprendi sobre tecnologias que são extremamente requisitados: ansible, terraform, kubernetes e docker, além da integração de servidores cloud.
 
 
-
-
-
-
-
 ## **Objetivos:**
 
-- Cursar uma graduação em ciências da computação após finalizar o tecnólogo em ADS;
+- Cursar graduação de ciências da computação após finalizar o tecnólogo em ADS;
 - Desenvolver fluência em inglês;
 - Me desenvolver na área de Engenharia de Dados;
 - Produzir conteúdo educativo para transformar a vida das pessoas através da tecnologia;
@@ -72,23 +68,10 @@ No linux utilizei o ubuntu server para facilitar meu aprendizado, além dos coma
 
 Tenho conhecimento em acesso remoto, infraestrutura como código (IaC), servidor de arquivos, servidor web e servidor de banco de dados com linux.
 
-- Descobri que ao criar o arquivo markdown seguindo ordem de Título #, ##, ###, ####. é possível utilizar a extensão markdown-all-in-one para criar automaticamente o sumário
 
-1. ctrl + shift + p 
-2. markdown all in one: Create table of content (toc)
-
-- Atalhos VsCode:
-
-- Duplicar Linha = Shift + Alt + Seta
-- Mover Linha = Alt + Seta
-- Apagar Linha = Ctrl + Shift + K
-- Multi Ocorrências = Ctrl + D
-- Multi Seleção = Alt + Click
-- Zen Mode = Ctrl + K Z
-- IntelliSense = Ctrl + Espaço
-
-* [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/GitGithub/gitGithub.md)
-* [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-1/LinuxParaDesenvolvedores/Linux.md)
+* [**Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_01/git_github/git_github.md)
+  
+* [**Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_01/linux_para_desenvolvedores/linux.md)
 
 <details><summary>Certificados</summary>
   
@@ -105,8 +88,8 @@ Realizei os exercícios bem desafiadores e sei da extrema importância de sempre
 
 Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de armazenamento e processamento de dados, MLOPs e DataOps. Além de entender conceitos de ETL e ELT, DaaS e como iniciar projetos em big data.
 
-- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-2/SqlParaAnaliseDeDadosDoBasicoAoAvancado/SQL.md)
-- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-2/BigDataFundamentos/BigDataFundamentos.md)
+- [**SQL para Análise de Dados: Do básico ao avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_02/sql_curso/sql.md)
+- [**Big Data Fundamentos 3.0**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_02/big_data_fundamentos/big_data.md)
 
 <details><summary>Certificados</summary>
   
@@ -118,7 +101,8 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 ## Sprint 03
 
 
-- [**Python 3 - Curso Completo do Básico ao Avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-3/python3.md)
+
+- [**Python 3 - Curso Completo do Básico ao Avançado**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_03/python.md)
 
 
 <details><summary>Certificados</summary>
@@ -127,20 +111,133 @@ Através do curso de Big Data, pude aprender conceitos gerais sobre sistemas de 
 
 </details>
 
-## Sprint #4
+## Sprint 04
 
-- [**Estatística Descritiva com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/estatistica_descritiva_python/estatistica.md)
-- [**Docker para Desenvolvedores (com Docker Swarm e Kubernetes)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/docker_e_kubernetes/docker.md)
-- [**Programação funcional com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/cursoPython/programacao_funcional.md)
-- [**Programação funcional: O que é?**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/artigo_prog_funcional.md)
+
+
+- [**Estatística Descritiva com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_04/estatistica_descritiva_python/estatistica.md)
+- [**Docker para Desenvolvedores (com Docker Swarm e Kubernetes)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_04/docker_e_kubernetes/docker.md)
+- [**Programação funcional com Python**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_04/curso_python_2/programacao_funcional.md)
+- [**Programação funcional: O que é? (Artigo)**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_04/artigo_prog_funcional.md)
 
 
 <details><summary>Certificados</summary>
   
-- [**Docker**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/docker_certificado.jpg)
-- [**Estatística Descritiva**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/estatistica_certificado.jpg)
-- [**Segurança**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/seguranca_certificado.jpg)
-- [**Métodos ágeis**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/Sprint-4/certificados/metodos_ageis_certificado.jpg)
+- [**Docker**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/docker_certificado.jpg)
+- [**Estatística Descritiva**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/estatistica_certificado.jpg)
+- [**Segurança**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/seguranca_certificado.jpg)
+- [**Métodos ágeis**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/certificados/metodos_ageis_certificado.jpg)
+
+</details>
+
+
+## Sprint 05
+
+Começamos a aprender sobre a nuvem aws, através do AWS skill builder, com video aulas fornecidos pela AWS
+
+Introdução ao conceito de nuvem, precificação, custo-beneficio, aspectos econômicos da nuvem;
+
+Um conteúo mais voltado para conhecer a aws, e da precificação dos seus serviços
+
+- [**Conceito de Nuvem**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/aws.md)
+- [**Tecnologias Essenciais AWS**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/aws2.md)
+
+
+<details><summary>Certificados</summary>
+  
+- [**Aws Sales Accreditation**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/certificados/aws_sales_accretitation.png)
+- [**Aws Accreditation**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/certificados/aws_accreditation.png)
+- [**Aws Economics**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/certificados/aws_economics_accreditation.png)
+- [**Aws Exam Prep**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/certificados/aws_exam_prep.png)
+- [**Aws Cloud Quest**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_05/certificados/aws_cloud_quest.png)
+
+</details>
+
+## Sprint 06
+
+
+
+- [**Data Analytics Fundamentals**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/data_analytics_fundamentals.md)
+- [**Lab Athena**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_athena/lab_athena.md)
+- [**Lab Lambda**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_lambda/lab_lambda.md)
+- [**Lab S3**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/labs_aws/lab_s3/lab_s3.md)
+
+<details><summary>Certificados</summary>
+  
+- [**Data Analytics**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/1_data_analytics.png)
+- [**Data Analytics Business**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/2_data_analytics_business.png)
+- [**Aws Kinesis Stream**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/3_kinesis_streams.png)
+- [**Aws Kinesis Analytics**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/4_kinesis_analytics.png)
+- [**Aws EMR**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/5_amazon_emr.png)
+- [**Aws Athena**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/6_amazon_athena.png)
+- [**Aws Quicksight**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/7_amazon_quicksight.png)
+- [**Aws Iot Analytics**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/8_aws_iot_analytics.png)
+- [**Aws Analyzing Streaming**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/91_analyzing_streaming.png)
+- [**Aws Redshift Best Practices**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/92_best_practices_dw_redshift.png)
+- [**Aws Serveless Analytics**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/93_serveless_analytics.png)
+- [**Aws Analytics Games**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/94_analytics_games.png)
+- [**Aws Amazon Redshift**](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_06/certificados/9_amazon_redshift.png)
+
+
+</details>
+
+## Sprint 07
+
+- [****]()
+- [****]()
+
+
+<details><summary>Certificados</summary>
+  
+- [****]()
+- [****]()
+- [****]()
+- [****]()
+
+</details>
+
+## Sprint 08
+
+- [****]()
+- [****]()
+
+
+<details><summary>Certificados</summary>
+  
+- [****]()
+- [****]()
+- [****]()
+- [****]()
+
+</details>
+
+## Sprint 09
+
+- [****]()
+- [****]()
+
+
+<details><summary>Certificados</summary>
+  
+- [****]()
+- [****]()
+- [****]()
+- [****]()
+
+</details>
+
+## Sprint 10
+
+- [****]()
+- [****]()
+
+
+<details><summary>Certificados</summary>
+  
+- [****]()
+- [****]()
+- [****]()
+- [****]()
 
 </details>
 
