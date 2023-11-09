@@ -450,6 +450,9 @@ SELECT
 FROM trusted
 ```
 
+![Athena Tables and Views](./img/athena_tables.png)
+
+
 # Etapa Final - Sprint 10
 
 - Criar Views e Abrir no Quicksight
@@ -457,7 +460,10 @@ FROM trusted
 
 ## Pré processamento local
 
-1. acessei meu wsl 2 com todas as dependências necessárias para rodar o pyspark com jupyter notebook
+
+1. fiz o download dos datasets do IMDB, https://developer.imdb.com/non-commercial-datasets/
+   
+2. acessei meu wsl 2 com todas as dependências necessárias para rodar o pyspark com jupyter notebook
 
 - ```pip install jupyter```
 - ```pip install findspark```

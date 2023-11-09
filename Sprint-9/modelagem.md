@@ -17,7 +17,7 @@
 
 3- 1fn Uma tabela deve possuir:
 
-- Apenas valores atõmicos
+- Apenas valores atômicos
 - não há grupos de atributos repetidos
 - Existe uma chave primária(candidata)
 - Não possui atributos multivalorados, compostos ou relações aninhadas (uma tabela dentro da outra)
