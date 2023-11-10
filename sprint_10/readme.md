@@ -92,7 +92,7 @@ s3 = boto3.client(
 s3.upload_file(movies_files, nome_bucket, series_dir)
 s3.upload_file(series_files, nome_bucket, movies_dir)
  
-print(f"{series_files} e {movies_files}, foram transferidos com sucesso para o bucket: {nome_bucket}, no Amazon S3.")
+print(f"{series_files} e {movies_files}, foram transferidos para o bucket S3.")
 ```
 
 ![Ingestão de dados no S3](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/img/1_upload_ok.png)
