@@ -346,27 +346,6 @@ df.write.format("parquet").save(target_path)
 job.commit()
 ```
 
-## Modelagem de Dados da Camada Refined
-
-- Apenas valores atômicos
-- não há grupos de atributos repetidos
-- Existe uma chave primária(candidata)
-- Não possui atributos multivalorados, compostos ou relações aninhadas (uma tabela dentro da outra)
-- compostos pode ser o endereço que devemos dividir em rua, cep, estado, cidade...
-- Já multivalorados pode ser o telefone, pois ela pode ter mais de 1
-Passo a Passo:
-
-1. utilizarei o star schema
-2. dimensão é igual a um dado descritivo
-3. constituida por fatos que são (tabelas de medidas) e dimensões que são (tabelas de contexto)
-4. os fatos são medidas quantitativas como vendas e as dimensões são o contexto dessas medidas como data, local, produto...
-5. modelagem dimensional é usada para análise.
-6. resolvi deixar o fato_filmes apenas com as chaves estrangeiras e criar uma dim_locacao com os detalhes de valores e horarios da locacao
-
-
-![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/modelo%20de%20dados.jpg)
-
-
 
 ## Processamento Refined Usando Glue
 
@@ -461,11 +440,16 @@ FROM trusted
 
 ## Modelagem do desafio final
 
+## Modelagem de Dados da Camada Refined
+
+
 ![Schema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/2_schema.jpeg)
 
 ![Modelagem Multidimensional](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/1_dimensao.jpeg)
 
 ![Querys](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/3_querrs.jpeg)
+
+![starSchema](https://github.com/lucasbergamo/Compass_UOL_data_engineering/blob/main/sprint_10/desafio_final/modelo%20de%20dados.jpg)
 
 ## Pré processamento local
 
