@@ -55,16 +55,14 @@ def lambda_handler(event, context):
     
     print(f"Total de filmes encontrados: {len(todos_filmes)}")
     
-    nome_arquivo = "todos_filmes_drama_romance_tmdb.json"
-    
     s3 = boto3.client('s3')
     
-    caminho_arquivo_s3 = f"Raw/Tmdb/JSON/{datetime.now().strftime('%Y/%m/%d')}/{nome_arquivo}"
+    caminho_arquivo_s3 = f"Raw/Tmdb/JSON/{datetime.now().strftime('%Y/%m/%d')}"
     
     s3.put_object(
         Bucket='desafio-final-compass-uol',
         Key=caminho_arquivo_s3,
-        Body=json.dumps(todos_filmes, ensure_ascii=False, indent=4),
+        Body=json.dumps(todos_filmes),
         ContentType='application/json'
     )
     

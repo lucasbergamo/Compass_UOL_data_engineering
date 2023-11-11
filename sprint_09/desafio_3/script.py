@@ -17,27 +17,40 @@ job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
 
-source_path = "s3://desafio-final-compass-uol/Trusted/Tmdb/PARQUET/2023/10/18/todos_filmes_drama_romance_tmdb.parquet"
+source_path = "s3://desafio-final-compass-uol/Trusted/Tmdb/PARQUET/2023/10/18/*.parquet"
 current_date = datetime.now().strftime("%Y/%m/%d")
 s3_refined_path = f"s3://desafio-final-compass-uol/Refined/Tmdb/PARQUET/{current_date}/"
 
 
 df_filmes = spark.read.parquet(source_path)
 
-# selecioando apenas as colunas relevantes
+# selecionado apenas as colunas relevantes
 
-filmesdf = df_filmes.select("id", "genre_ids", "title", "release_date", "original_title", "original_language")
+fatodf = df_filmes.select("id_filme", "id_atores", "id_equipe", "id_diretores", "id_popularidade")
 
-popularidadedf = df_filmes.select("id", "title", "popularity", "vote_average", "vote_count")
+popularidadedf = df_filmes.select("id_popularidade", "filmes", "avaliacao_media", "votos_totais")
 
-# criando tabelas
+diretoresdf = df_filmes.select("id_diretores", "nome_diretor", "ano_nascimento", "ano_falecimento")
 
-filmesdf.write.saveAsTable("fato_f")
-popularidadedf.write.saveAsTable("dim_p")
+atoresdf = df_filmes.select("id_atores", "filmes", "nome_ator", "nome_personagem", "ano_nascimento", "ano_falecimento")
 
-# salvando os arquivos
+filmesdf = df_filmes.select("id_filme", "filmes", "ano_lancamento", "duracao", "genero")
 
-filmesdf.write.parquet(s3_refined_path, mode="overwrite")
-popularidadedf.write.parquet(s3_refined_path, mode="append")
+equipedf = df_filmes.select("id_equipe", "filmes", "nome_equipe", "profissao")
+
+# criando tabelas e salvando os arquivos
+
+fatodf.coalesce(1).write.saveAsTable(name="fato_filmes", mode="overwrite", path=s3_refined_path, format="parquet")
+
+popularidadedf.coalesce(1).write.saveAsTable(name="dim_popularidade", mode="overwrite", path=s3_refined_path, format="parquet")
+
+diretoresdf.coalesce(1).write.saveAsTable(name="dim_diretores", mode="overwrite", path=s3_refined_path, format="parquet")
+
+atoresdf.coalesce(1).write.saveAsTable(name="dim_atores", mode="overwrite", path=s3_refined_path, format="parquet")
+
+filmesdf.coalesce(1).write.saveAsTable(name="dim_filmes", mode="overwrite", path=s3_refined_path, format="parquet")
+
+equipedf.coalesce(1).write.saveAsTable(name="dim_equipe", mode="overwrite", path=s3_refined_path, format="parquet")
+
 
 job.commit()
